@@ -1,0 +1,120 @@
+2023-06-06 16:10:25.182 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-06-06 16:35:19.123 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 16:46:27.251 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 17:52:02.510 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 17:52:19.680 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 20:17:40.967 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 20:20:34.531 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 20:46:04.410 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8881 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8881 or configure this application to listen on another port.
+

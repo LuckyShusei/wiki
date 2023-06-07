@@ -1,0 +1,2086 @@
+2023-06-06 16:10:17.435 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 12548 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:10:17.444 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:10:21.197 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 23576 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:10:21.212 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:10:22.744 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2023-06-06 16:10:22.810 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-06 16:10:22.812 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:10:22.814 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:10:23.224 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:10:23.225 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 5659 ms
+2023-06-06 16:10:24.085 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2023-06-06 16:10:24.109 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-06 16:10:24.111 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:10:24.113 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:10:24.308 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:10:24.309 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 2932 ms
+2023-06-06 16:10:24.707 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-06-06 16:10:24.819 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-06 16:10:24.846 INFO  config.com.luckysyusei.wiki.WikiApplication              :61
+            [32m                  [0;39m Started WikiApplication in 8.443 seconds (JVM running for 9.602)
+2023-06-06 16:10:25.088 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-06-06 16:10:25.094 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591 
+            [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-06-06 16:10:25.101 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2023-06-06 16:10:25.101 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Stopping service [Tomcat]
+2023-06-06 16:10:25.110 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2023-06-06 16:10:25.112 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8080"]
+2023-06-06 16:10:25.127 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 
+            [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-06 16:10:25.182 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-06-06 16:27:18.610 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 18688 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:27:18.616 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:27:19.789 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:27:19.803 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:27:19.804 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:27:19.804 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:27:19.893 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:27:19.894 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1183 ms
+2023-06-06 16:27:20.335 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:27:20.395 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 16:27:20.410 INFO  config.com.luckysyusei.wiki.WikiApplication              :61
+            [32m                  [0;39m Started WikiApplication in 2.537 seconds (JVM running for 3.441)
+2023-06-06 16:27:20.413 INFO  config.com.luckysyusei.wiki.WikiApplication              :15
+            [32m                  [0;39m Start
+2023-06-06 16:27:20.413 INFO  config.com.luckysyusei.wiki.WikiApplication              :16
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 16:31:48.544 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 3676 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:31:48.548 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:31:49.855 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:31:49.866 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:31:49.867 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:31:49.867 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:31:49.948 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:31:49.948 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1340 ms
+2023-06-06 16:31:50.276 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:31:50.324 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 16:31:50.334 INFO  config.com.luckysyusei.wiki.WikiApplication              :61
+            [32m                  [0;39m Started WikiApplication in 2.491 seconds (JVM running for 3.452)
+2023-06-06 16:31:50.337 INFO  config.com.luckysyusei.wiki.WikiApplication              :15
+            [32m                  [0;39m Start
+2023-06-06 16:31:50.338 INFO  config.com.luckysyusei.wiki.WikiApplication              :16
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 16:35:15.947 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 10964 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:35:15.951 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:35:17.573 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 11132 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:35:17.578 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:35:17.962 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:35:17.992 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:35:17.993 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:35:17.994 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:35:18.130 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:35:18.130 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 2070 ms
+2023-06-06 16:35:18.619 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:35:18.630 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:35:18.631 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:35:18.632 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:35:18.733 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:35:18.733 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1087 ms
+2023-06-06 16:35:18.786 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:35:18.860 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 16:35:18.879 INFO  config.com.luckysyusei.wiki.WikiApplication              :61
+            [32m                  [0;39m Started WikiApplication in 3.9 seconds (JVM running for 4.914)
+2023-06-06 16:35:18.882 INFO  config.com.luckysyusei.wiki.WikiApplication              :15
+            [32m                  [0;39m Start
+2023-06-06 16:35:18.883 INFO  config.com.luckysyusei.wiki.WikiApplication              :16
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 16:35:19.079 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:35:19.083 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591 
+            [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8880 is already in use
+2023-06-06 16:35:19.086 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:35:19.086 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Stopping service [Tomcat]
+2023-06-06 16:35:19.091 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:35:19.092 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:35:19.099 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 
+            [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-06 16:35:19.123 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 16:45:31.651 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 11752 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:45:31.658 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:45:34.047 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:45:34.067 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:45:34.069 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:45:34.069 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:45:34.273 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:45:34.274 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 2487 ms
+2023-06-06 16:45:35.116 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:45:35.223 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 16:45:35.249 INFO  config.com.luckysyusei.wiki.WikiApplication              :61
+            [32m                  [0;39m Started WikiApplication in 4.793 seconds (JVM running for 6.573)
+2023-06-06 16:45:35.254 INFO  config.com.luckysyusei.wiki.WikiApplication              :15
+            [32m                  [0;39m Start
+2023-06-06 16:45:35.255 INFO  config.com.luckysyusei.wiki.WikiApplication              :16
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 16:46:21.546 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 8364 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:46:21.556 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:46:24.654 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:46:24.694 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:46:24.695 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:46:24.696 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:46:24.991 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:46:24.992 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 3338 ms
+2023-06-06 16:46:25.042 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 17840 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:46:25.049 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:46:26.204 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:46:26.299 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 16:46:26.329 INFO  config.com.luckysyusei.wiki.WikiApplication              :61
+            [32m                  [0;39m Started WikiApplication in 5.858 seconds (JVM running for 6.881)
+2023-06-06 16:46:26.335 INFO  config.com.luckysyusei.wiki.WikiApplication              :15
+            [32m                  [0;39m Start
+2023-06-06 16:46:26.336 INFO  config.com.luckysyusei.wiki.WikiApplication              :16
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 16:46:26.621 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:46:26.634 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:46:26.635 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:46:26.637 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:46:26.731 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:46:26.732 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1536 ms
+2023-06-06 16:46:27.207 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:46:27.211 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591 
+            [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8880 is already in use
+2023-06-06 16:46:27.216 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:46:27.216 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Stopping service [Tomcat]
+2023-06-06 16:46:27.222 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:46:27.223 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:46:27.234 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 
+            [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-06 16:46:27.251 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 16:46:55.202 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 23664 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:46:55.206 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:46:56.047 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:46:56.061 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:46:56.062 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:46:56.063 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:46:56.138 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:46:56.139 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 874 ms
+2023-06-06 16:46:56.458 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:46:56.505 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 16:46:56.517 INFO  config.com.luckysyusei.wiki.WikiApplication              :61
+            [32m                  [0;39m Started WikiApplication in 1.903 seconds (JVM running for 2.601)
+2023-06-06 16:46:56.520 INFO  config.com.luckysyusei.wiki.WikiApplication              :15
+            [32m                  [0;39m Start
+2023-06-06 16:46:56.521 INFO  config.com.luckysyusei.wiki.WikiApplication              :16
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 16:47:11.228 INFO  config.com.luckysyusei.wiki.WikiApplication              :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 21456 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:47:11.232 INFO  config.com.luckysyusei.wiki.WikiApplication              :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:47:12.112 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:47:12.122 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:47:12.123 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:47:12.125 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:47:12.202 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:47:12.203 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 909 ms
+2023-06-06 16:47:12.569 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:47:12.614 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 16:47:12.627 INFO  config.com.luckysyusei.wiki.WikiApplication              :61
+            [32m                  [0;39m Started WikiApplication in 1.995 seconds (JVM running for 2.693)
+2023-06-06 16:47:12.630 INFO  config.com.luckysyusei.wiki.WikiApplication              :15
+            [32m                  [0;39m Start
+2023-06-06 16:47:12.630 INFO  config.com.luckysyusei.wiki.WikiApplication              :16
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 16:47:34.897 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 16:47:34.898 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 16:47:34.899 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 16:56:57.303 INFO  config.com.luckysyusei.wiki.WikiApplication       :55
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 17180 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 16:56:57.322 INFO  config.com.luckysyusei.wiki.WikiApplication       :664
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 16:56:59.794 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 16:56:59.813 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:56:59.815 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 16:56:59.818 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 16:56:59.982 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 16:56:59.983 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 2460 ms
+2023-06-06 16:57:00.828 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 16:57:00.973 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 16:57:01.035 INFO  config.com.luckysyusei.wiki.WikiApplication       :61
+            [32m                  [0;39m Started WikiApplication in 5.742 seconds (JVM running for 7.464)
+2023-06-06 16:57:01.048 INFO  config.com.luckysyusei.wiki.WikiApplication       :15
+            [32m                  [0;39m Start
+2023-06-06 16:57:01.050 INFO  config.com.luckysyusei.wiki.WikiApplication       :16
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 16:57:16.690 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 16:57:16.691 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 16:57:16.692 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 17:42:19.000 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 18976 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 17:42:19.004 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 17:42:19.957 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 17:42:19.971 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:42:19.972 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 17:42:19.973 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 17:42:20.054 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 17:42:20.054 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 979 ms
+2023-06-06 17:42:20.452 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:42:20.499 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 17:42:20.511 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.112 seconds (JVM running for 2.814)
+2023-06-06 17:42:20.513 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 17:42:20.514 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 17:43:33.904 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 12208 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 17:43:33.910 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 17:43:34.805 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 17:43:34.816 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:43:34.817 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 17:43:34.819 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 17:43:34.888 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 17:43:34.888 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 905 ms
+2023-06-06 17:43:35.243 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:43:35.291 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 17:43:35.304 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.989 seconds (JVM running for 2.802)
+2023-06-06 17:43:35.307 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 17:43:35.307 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 17:44:45.732 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 12736 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 17:44:45.735 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 17:44:46.639 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 17:44:46.652 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:44:46.653 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 17:44:46.654 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 17:44:46.735 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 17:44:46.735 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 939 ms
+2023-06-06 17:44:47.143 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:44:47.188 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 17:44:47.199 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.055 seconds (JVM running for 2.783)
+2023-06-06 17:44:47.202 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 17:44:47.203 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 17:44:53.090 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 17:44:53.090 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 17:44:53.091 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 0 ms
+2023-06-06 17:51:59.342 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 18636 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 17:51:59.353 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 17:51:59.584 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 7572 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 17:51:59.593 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 17:52:00.940 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 17:52:00.957 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:00.960 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 17:52:00.961 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 17:52:01.060 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 17:52:01.060 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1363 ms
+2023-06-06 17:52:01.470 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 17:52:01.497 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:01.498 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 17:52:01.498 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 17:52:01.565 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:01.643 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 17:52:01.657 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.905 seconds (JVM running for 3.841)
+2023-06-06 17:52:01.661 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 17:52:01.661 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 17:52:01.686 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 17:52:01.687 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 2224 ms
+2023-06-06 17:52:02.438 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:02.444 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591 
+            [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8880 is already in use
+2023-06-06 17:52:02.449 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:02.450 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Stopping service [Tomcat]
+2023-06-06 17:52:02.456 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:02.457 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:02.468 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 
+            [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-06 17:52:02.510 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 17:52:15.291 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 8568 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 17:52:15.300 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 17:52:17.813 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 17:52:17.873 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:17.875 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 17:52:17.876 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 17:52:17.906 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 1552 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 17:52:17.915 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 17:52:18.080 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 17:52:18.080 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 2659 ms
+2023-06-06 17:52:18.894 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:18.971 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 17:52:18.991 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 4.895 seconds (JVM running for 6.431)
+2023-06-06 17:52:18.995 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 17:52:18.996 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 17:52:19.137 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 17:52:19.146 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:19.151 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 17:52:19.152 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 17:52:19.233 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 17:52:19.234 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1230 ms
+2023-06-06 17:52:19.637 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:19.644 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591 
+            [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8880 is already in use
+2023-06-06 17:52:19.647 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:19.647 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Stopping service [Tomcat]
+2023-06-06 17:52:19.652 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:19.653 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8880"]
+2023-06-06 17:52:19.662 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 
+            [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-06 17:52:19.680 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 17:52:42.880 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 17:52:42.881 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 17:52:42.882 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 19:47:39.443 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 26964 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 19:47:39.454 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 19:47:40.991 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 19:47:41.010 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:47:41.011 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 19:47:41.011 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 19:47:41.153 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 19:47:41.153 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1576 ms
+2023-06-06 19:47:41.799 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:47:41.865 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 19:47:41.877 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.413 seconds (JVM running for 4.493)
+2023-06-06 19:47:41.879 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 19:47:41.879 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 19:48:44.445 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 3280 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 19:48:44.450 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 19:48:45.653 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 19:48:45.668 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:48:45.670 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 19:48:45.670 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 19:48:45.751 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 19:48:45.751 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1218 ms
+2023-06-06 19:48:46.202 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:48:46.255 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 19:48:46.271 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.531 seconds (JVM running for 3.554)
+2023-06-06 19:48:46.273 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 19:48:46.274 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 19:49:51.599 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 23264 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 19:49:51.603 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 19:49:52.750 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 19:49:52.760 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:49:52.761 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 19:49:52.762 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 19:49:52.847 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 19:49:52.848 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1151 ms
+2023-06-06 19:49:53.322 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:49:53.375 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 19:49:53.390 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.525 seconds (JVM running for 3.398)
+2023-06-06 19:49:53.396 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 19:49:53.397 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 19:50:01.400 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 18700 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 19:50:01.404 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 19:50:02.479 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 19:50:02.498 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:50:02.500 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 19:50:02.501 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 19:50:02.576 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 19:50:02.577 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1096 ms
+2023-06-06 19:50:03.064 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:50:03.119 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 19:50:03.135 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.471 seconds (JVM running for 3.355)
+2023-06-06 19:50:03.138 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 19:50:03.139 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 19:50:46.575 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 2124 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 19:50:46.579 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 19:50:47.433 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 19:50:47.443 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:50:47.444 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 19:50:47.445 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 19:50:47.527 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 19:50:47.528 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 889 ms
+2023-06-06 19:50:47.896 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:50:47.941 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 19:50:47.952 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.941 seconds (JVM running for 2.631)
+2023-06-06 19:50:47.956 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 19:50:47.957 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 19:51:01.115 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 19:51:01.116 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 19:51:01.117 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 19:53:37.546 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 24780 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 19:53:37.550 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 19:53:39.187 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 19:53:39.205 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:53:39.206 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 19:53:39.206 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 19:53:39.345 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 19:53:39.346 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1726 ms
+2023-06-06 19:53:39.954 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:53:40.015 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 19:53:40.028 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.325 seconds (JVM running for 4.525)
+2023-06-06 19:53:40.032 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 19:53:40.033 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 19:53:52.387 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 25776 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 19:53:52.391 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 19:53:53.299 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 19:53:53.308 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:53:53.308 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 19:53:53.310 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 19:53:53.375 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 19:53:53.375 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 917 ms
+2023-06-06 19:53:53.720 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:53:53.763 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 19:53:53.776 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.934 seconds (JVM running for 2.645)
+2023-06-06 19:53:53.778 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 19:53:53.779 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 19:54:08.838 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 19:54:08.839 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 19:54:08.840 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 19:56:24.122 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 21356 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 19:56:24.126 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 19:56:25.406 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 19:56:25.424 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:56:25.426 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 19:56:25.426 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 19:56:25.537 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 19:56:25.538 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1345 ms
+2023-06-06 19:56:26.083 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 19:56:26.135 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 19:56:26.147 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.841 seconds (JVM running for 3.812)
+2023-06-06 19:56:26.151 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 19:56:26.152 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 19:57:16.620 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 19:57:16.621 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 19:57:16.622 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 0 ms
+2023-06-06 20:14:42.042 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 17652 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:14:42.046 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:14:42.924 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:14:42.933 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:14:42.934 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:14:42.935 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:14:42.996 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:14:42.996 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 881 ms
+2023-06-06 20:14:43.351 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:14:43.393 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:14:43.405 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.912 seconds (JVM running for 2.772)
+2023-06-06 20:14:43.407 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:14:43.408 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:14:48.260 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 20:14:48.261 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 20:14:48.262 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 20:15:28.389 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 20692 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:15:28.393 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:15:29.275 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:15:29.288 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:15:29.290 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:15:29.291 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:15:29.352 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:15:29.353 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 896 ms
+2023-06-06 20:15:29.687 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:15:29.731 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:15:29.741 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.925 seconds (JVM running for 2.678)
+2023-06-06 20:15:29.744 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:15:29.745 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:15:46.730 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 20:15:46.731 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 20:15:46.732 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 20:17:36.453 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 4084 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:17:36.461 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:17:38.315 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 13208 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:17:38.318 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:17:38.419 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:17:38.456 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:17:38.457 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:17:38.457 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:17:38.625 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:17:38.625 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 2070 ms
+2023-06-06 20:17:39.297 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:17:39.360 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:17:39.373 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:17:39.375 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.883 seconds (JVM running for 5.134)
+2023-06-06 20:17:39.378 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:17:39.379 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:17:39.386 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:17:39.387 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:17:39.388 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:17:39.471 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:17:39.471 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1075 ms
+2023-06-06 20:17:39.859 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:17:39.863 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591 
+            [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8880 is already in use
+2023-06-06 20:17:39.866 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:17:39.867 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Stopping service [Tomcat]
+2023-06-06 20:17:39.873 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:17:39.874 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:17:39.880 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 
+            [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-06 20:17:40.967 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 20:17:42.361 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 20:17:42.362 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 20:17:42.367 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 5 ms
+2023-06-06 20:19:36.634 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 13016 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:19:36.638 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:19:37.625 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:19:37.640 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:19:37.641 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:19:37.642 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:19:37.735 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:19:37.735 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1044 ms
+2023-06-06 20:19:38.154 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:19:38.202 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:19:38.213 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.233 seconds (JVM running for 3.598)
+2023-06-06 20:19:38.217 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:19:38.217 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:19:49.961 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 23640 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:19:49.966 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:19:50.836 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:19:50.846 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:19:50.847 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:19:50.848 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:19:50.912 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:19:50.912 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 885 ms
+2023-06-06 20:19:51.275 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:19:51.320 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:19:51.335 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.947 seconds (JVM running for 2.707)
+2023-06-06 20:19:51.338 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:19:51.338 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:20:31.153 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 24160 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:20:31.161 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:20:33.065 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 15584 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:20:33.070 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:20:33.238 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:20:33.263 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:20:33.264 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:20:33.265 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:20:33.421 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:20:33.421 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 2153 ms
+2023-06-06 20:20:34.015 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:20:34.062 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:20:34.068 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:20:34.073 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:20:34.074 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:20:34.075 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:20:34.082 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.85 seconds (JVM running for 4.933)
+2023-06-06 20:20:34.085 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:20:34.085 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:20:34.139 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:20:34.139 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 993 ms
+2023-06-06 20:20:34.498 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:20:34.502 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591 
+            [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8880 is already in use
+2023-06-06 20:20:34.505 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:20:34.506 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Stopping service [Tomcat]
+2023-06-06 20:20:34.511 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:20:34.511 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:20:34.518 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 
+            [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-06 20:20:34.531 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
+2023-06-06 20:24:58.317 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 27328 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:24:58.321 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:24:59.249 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:24:59.259 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:24:59.260 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:24:59.260 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:24:59.324 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:24:59.325 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 927 ms
+2023-06-06 20:24:59.670 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:24:59.715 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:24:59.728 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.964 seconds (JVM running for 2.719)
+2023-06-06 20:24:59.730 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:24:59.731 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:27:00.730 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 13036 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:27:00.741 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:27:01.630 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:27:01.645 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:27:01.646 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:27:01.647 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:27:01.710 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:27:01.711 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 914 ms
+2023-06-06 20:27:02.096 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:27:02.144 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:27:02.157 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.057 seconds (JVM running for 3.038)
+2023-06-06 20:27:02.160 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:27:02.161 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:27:06.616 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 20:27:06.617 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 20:27:06.618 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 20:30:26.925 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 6408 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:30:26.929 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:30:27.771 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:30:27.783 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:30:27.784 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:30:27.785 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:30:27.849 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:30:27.850 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 853 ms
+2023-06-06 20:30:28.186 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:30:28.235 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:30:28.245 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.896 seconds (JVM running for 2.576)
+2023-06-06 20:30:28.248 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:30:28.249 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:31:01.212 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 20:31:01.213 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 20:31:01.214 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 20:31:33.636 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 17572 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:31:33.640 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:31:34.525 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:31:34.535 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:31:34.536 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:31:34.537 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:31:34.599 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:31:34.600 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 897 ms
+2023-06-06 20:31:34.949 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:31:34.996 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:31:35.007 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.942 seconds (JVM running for 2.652)
+2023-06-06 20:31:35.010 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:31:35.010 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:31:45.995 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 8212 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:31:46.000 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:31:46.861 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:31:46.871 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:31:46.872 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:31:46.873 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:31:46.942 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:31:46.942 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 881 ms
+2023-06-06 20:31:47.275 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:31:47.324 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:31:47.335 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.938 seconds (JVM running for 2.689)
+2023-06-06 20:31:47.338 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:31:47.339 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:31:53.517 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 20:31:53.518 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 20:31:53.519 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 20:32:38.048 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 7784 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:32:38.052 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:32:38.922 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:32:38.931 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:32:38.933 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:32:38.933 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:32:39.007 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:32:39.007 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 894 ms
+2023-06-06 20:32:39.332 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:32:39.379 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:32:39.389 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.924 seconds (JVM running for 2.703)
+2023-06-06 20:32:39.392 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:32:39.393 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:34:04.151 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 20:34:04.152 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 20:34:04.154 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 20:39:43.129 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 22900 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:39:43.133 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:39:44.029 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:39:44.038 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:39:44.039 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:39:44.040 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:39:44.105 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:39:44.105 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 911 ms
+2023-06-06 20:39:44.468 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:39:44.510 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:39:44.521 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.971 seconds (JVM running for 2.746)
+2023-06-06 20:39:44.525 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:39:44.525 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:40:09.487 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 9524 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:40:09.491 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:40:10.400 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:40:10.412 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:40:10.412 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:40:10.413 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:40:10.478 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:40:10.479 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 925 ms
+2023-06-06 20:40:10.892 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:40:10.943 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:40:10.955 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.093 seconds (JVM running for 2.78)
+2023-06-06 20:40:10.957 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:40:10.958 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:40:16.936 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 21472 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:40:16.942 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:40:18.298 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:40:18.316 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:40:18.318 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:40:18.318 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:40:18.427 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:40:18.428 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1391 ms
+2023-06-06 20:40:18.967 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:40:19.023 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:40:19.037 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.018 seconds (JVM running for 4.101)
+2023-06-06 20:40:19.041 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:40:19.041 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:40:23.682 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 20:40:23.683 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 20:40:23.684 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 20:45:11.967 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 20388 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:45:11.972 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:45:12.879 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 20:45:12.890 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:45:12.891 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:45:12.892 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:45:12.970 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:45:12.970 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 931 ms
+2023-06-06 20:45:13.320 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 20:45:13.379 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 20:45:13.390 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.059 seconds (JVM running for 2.805)
+2023-06-06 20:45:13.392 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:45:13.393 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 20:46:00.694 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 4004 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:46:00.702 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:46:02.508 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8881 (http)
+2023-06-06 20:46:02.544 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8881"]
+2023-06-06 20:46:02.548 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:46:02.549 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:46:02.733 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:46:02.733 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1946 ms
+2023-06-06 20:46:02.927 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 15096 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:46:02.931 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:46:03.493 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8881"]
+2023-06-06 20:46:03.551 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8881 (http) with context path ''
+2023-06-06 20:46:03.566 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.868 seconds (JVM running for 4.891)
+2023-06-06 20:46:03.569 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:46:03.570 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8881
+2023-06-06 20:46:03.912 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8881 (http)
+2023-06-06 20:46:03.923 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8881"]
+2023-06-06 20:46:03.924 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:46:03.925 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:46:03.995 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:46:03.995 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 992 ms
+2023-06-06 20:46:04.361 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8881"]
+2023-06-06 20:46:04.365 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591 
+            [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8881 is already in use
+2023-06-06 20:46:04.368 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8881"]
+2023-06-06 20:46:04.369 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Stopping service [Tomcat]
+2023-06-06 20:46:04.374 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8881"]
+2023-06-06 20:46:04.374 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8881"]
+2023-06-06 20:46:04.381 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 
+            [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-06 20:46:04.410 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8881 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8881 or configure this application to listen on another port.
+
+2023-06-06 20:46:19.887 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 916 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:46:19.891 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:46:20.809 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8881 (http)
+2023-06-06 20:46:20.824 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8881"]
+2023-06-06 20:46:20.825 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:46:20.826 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:46:20.906 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:46:20.906 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 951 ms
+2023-06-06 20:46:21.250 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8881"]
+2023-06-06 20:46:21.293 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8881 (http) with context path ''
+2023-06-06 20:46:21.305 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.019 seconds (JVM running for 2.723)
+2023-06-06 20:46:21.308 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:46:21.309 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8881
+2023-06-06 20:48:40.080 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 13912 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:48:40.098 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:48:41.164 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2023-06-06 20:48:41.182 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-06 20:48:41.184 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:48:41.185 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:48:41.277 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:48:41.277 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1114 ms
+2023-06-06 20:48:41.733 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-06-06 20:48:41.787 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-06 20:48:41.798 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.551 seconds (JVM running for 3.413)
+2023-06-06 20:48:41.802 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:48:41.802 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:null
+2023-06-06 20:48:50.499 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 17268 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:48:50.507 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:48:52.223 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2023-06-06 20:48:52.262 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-06 20:48:52.263 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:48:52.263 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:48:52.414 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:48:52.415 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1800 ms
+2023-06-06 20:48:53.063 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-06-06 20:48:53.131 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-06 20:48:53.145 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.921 seconds (JVM running for 5.21)
+2023-06-06 20:48:53.150 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:48:53.150 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:null
+2023-06-06 20:49:03.835 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 12412 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:49:03.840 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:49:04.845 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2023-06-06 20:49:04.865 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-06 20:49:04.866 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:49:04.866 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:49:04.952 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:49:04.952 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1040 ms
+2023-06-06 20:49:05.388 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-06-06 20:49:05.484 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-06 20:49:05.514 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.353 seconds (JVM running for 3.1)
+2023-06-06 20:49:05.522 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:49:05.527 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:null
+2023-06-06 20:49:38.469 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 25664 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 20:49:38.473 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 20:49:39.339 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8882 (http)
+2023-06-06 20:49:39.348 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8882"]
+2023-06-06 20:49:39.349 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 20:49:39.350 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 20:49:39.420 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 20:49:39.420 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 883 ms
+2023-06-06 20:49:39.758 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8882"]
+2023-06-06 20:49:39.809 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8882 (http) with context path ''
+2023-06-06 20:49:39.822 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.974 seconds (JVM running for 2.685)
+2023-06-06 20:49:39.825 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 20:49:39.826 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8882
+2023-06-06 21:00:44.226 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 19152 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:00:44.230 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:00:45.122 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:00:45.134 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:00:45.135 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:00:45.136 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:00:45.207 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:00:45.207 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 909 ms
+2023-06-06 21:00:45.571 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:00:45.622 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:00:45.635 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.06 seconds (JVM running for 2.774)
+2023-06-06 21:00:45.638 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:00:45.639 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:04:51.580 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 18908 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:04:51.584 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:04:52.517 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:04:52.528 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:04:52.529 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:04:52.529 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:04:52.600 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:04:52.600 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 949 ms
+2023-06-06 21:04:52.975 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:04:53.024 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:04:53.036 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.064 seconds (JVM running for 2.779)
+2023-06-06 21:04:53.038 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:04:53.039 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:05:01.889 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:05:01.890 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:05:01.891 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:05:21.432 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 2516 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:05:21.441 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:05:22.364 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:05:22.376 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:05:22.377 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:05:22.378 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:05:22.465 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:05:22.466 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 958 ms
+2023-06-06 21:05:22.845 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:05:22.904 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:05:22.919 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.145 seconds (JVM running for 2.972)
+2023-06-06 21:05:22.922 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:05:22.923 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:05:27.259 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:05:27.260 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:05:27.261 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:05:49.521 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 18564 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:05:49.526 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:05:50.496 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:05:50.511 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:05:50.513 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:05:50.514 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:05:50.613 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:05:50.614 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1025 ms
+2023-06-06 21:05:50.961 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:05:51.012 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:05:51.025 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.238 seconds (JVM running for 3.061)
+2023-06-06 21:05:51.028 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:05:51.028 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:05:52.350 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:05:52.350 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:05:52.351 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:17:21.139 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 19352 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:17:21.147 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:17:22.259 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:17:22.277 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:17:22.280 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:17:22.280 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:17:22.366 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:17:22.367 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1147 ms
+2023-06-06 21:17:22.862 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:17:22.957 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:17:22.970 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.568 seconds (JVM running for 3.4)
+2023-06-06 21:17:22.974 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:17:22.974 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:17:47.519 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 25620 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:17:47.529 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:17:48.552 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:17:48.563 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:17:48.565 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:17:48.566 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:17:48.652 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:17:48.652 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1057 ms
+2023-06-06 21:17:49.122 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:17:49.180 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:17:49.196 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.439 seconds (JVM running for 3.256)
+2023-06-06 21:17:49.201 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:17:49.202 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:17:56.393 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:17:56.394 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:17:56.395 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:19:07.455 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 664 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:19:07.459 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:19:08.326 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:19:08.337 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:19:08.338 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:19:08.339 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:19:08.413 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:19:08.413 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 891 ms
+2023-06-06 21:19:08.759 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:19:08.812 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:19:08.822 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.991 seconds (JVM running for 2.665)
+2023-06-06 21:19:08.826 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:19:08.827 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:19:17.935 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:19:17.935 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:19:17.937 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:21:32.708 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 21512 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:21:32.711 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:21:33.635 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:21:33.645 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:21:33.646 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:21:33.648 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:21:33.730 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:21:33.731 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 945 ms
+2023-06-06 21:21:34.110 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:21:34.164 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:21:34.177 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.127 seconds (JVM running for 2.856)
+2023-06-06 21:21:34.181 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:21:34.182 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:21:39.561 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:21:39.562 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:21:39.563 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:22:08.903 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 17760 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:22:08.910 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:22:09.799 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:22:09.809 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:22:09.810 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:22:09.811 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:22:09.888 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:22:09.888 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 914 ms
+2023-06-06 21:22:10.296 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:22:10.358 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:22:10.372 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 2.082 seconds (JVM running for 2.884)
+2023-06-06 21:22:10.375 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:22:10.376 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:22:17.548 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:22:17.549 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:22:17.550 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:25:23.605 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 27580 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:25:23.608 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:25:24.489 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:25:24.500 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:25:24.501 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:25:24.503 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:25:24.567 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:25:24.567 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 896 ms
+2023-06-06 21:25:24.910 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:25:24.959 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:25:24.968 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.975 seconds (JVM running for 2.666)
+2023-06-06 21:25:24.971 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:25:24.972 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:25:29.731 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:25:29.731 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:25:29.732 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 0 ms
+2023-06-06 21:25:43.550 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 16696 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:25:43.554 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:25:44.410 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:25:44.420 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:25:44.421 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:25:44.421 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:25:44.498 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:25:44.499 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 883 ms
+2023-06-06 21:25:44.842 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:25:44.883 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:25:44.894 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 1.944 seconds (JVM running for 2.721)
+2023-06-06 21:25:44.897 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:25:44.898 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:25:49.045 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:25:49.046 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:25:49.048 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:43:46.945 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 13592 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:43:46.947 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:43:47.005 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255 
+            [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-06 21:43:47.006 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255 
+            [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-06 21:43:48.551 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:43:48.595 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:43:48.597 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:43:48.598 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:43:48.770 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:43:48.771 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1764 ms
+2023-06-06 21:43:49.406 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58  
+            [32m                  [0;39m LiveReload server is running on port 35729
+2023-06-06 21:43:49.431 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:43:49.504 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:43:49.524 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.494 seconds (JVM running for 4.61)
+2023-06-06 21:43:49.530 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:43:49.531 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:44:33.774 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 13592 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:44:33.775 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:44:33.991 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:44:33.992 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:44:33.992 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:44:33.992 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:44:34.016 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:44:34.017 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 238 ms
+2023-06-06 21:44:34.095 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58  
+            [32m                  [0;39m LiveReload server is running on port 35729
+2023-06-06 21:44:34.101 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:44:34.105 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:44:34.109 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 0.378 seconds (JVM running for 49.195)
+2023-06-06 21:44:34.111 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63  
+            [32m                  [0;39m Condition evaluation unchanged
+2023-06-06 21:44:34.111 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:44:34.111 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:44:43.866 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:44:43.867 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:44:43.868 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:45:35.795 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 13592 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:45:35.795 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:45:36.017 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:45:36.018 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:45:36.018 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:45:36.018 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:45:36.042 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:45:36.042 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 244 ms
+2023-06-06 21:45:36.124 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58  
+            [32m                  [0;39m LiveReload server is running on port 35729
+2023-06-06 21:45:36.129 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:45:36.132 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:45:36.140 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 0.395 seconds (JVM running for 111.225)
+2023-06-06 21:45:36.141 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63  
+            [32m                  [0;39m Condition evaluation unchanged
+2023-06-06 21:45:36.142 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:45:36.143 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:45:47.065 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:45:47.066 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:45:47.067 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
+2023-06-06 21:46:21.435 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 13592 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-06 21:46:21.435 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-06 21:46:21.575 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-06 21:46:21.576 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:46:21.576 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-06 21:46:21.576 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-06 21:46:21.600 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-06 21:46:21.600 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 162 ms
+2023-06-06 21:46:21.644 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58  
+            [32m                  [0;39m LiveReload server is running on port 35729
+2023-06-06 21:46:21.648 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-06 21:46:21.651 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-06 21:46:21.654 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 0.259 seconds (JVM running for 156.74)
+2023-06-06 21:46:21.656 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63  
+            [32m                  [0;39m Condition evaluation unchanged
+2023-06-06 21:46:21.656 INFO  com.luckusyusei.wiki.config.WikiApplication       :17  
+            [32m                  [0;39m Start
+2023-06-06 21:46:21.656 INFO  com.luckusyusei.wiki.config.WikiApplication       :18  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-06 21:46:22.058 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-06 21:46:22.059 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-06 21:46:22.060 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 1 ms
