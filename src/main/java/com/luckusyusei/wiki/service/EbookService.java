@@ -5,11 +5,10 @@ import com.luckusyusei.wiki.domain.Ebook;
 import com.luckusyusei.wiki.domain.EbookExample;
 import com.luckusyusei.wiki.mapper.EbookMapper;
 import com.luckusyusei.wiki.req.EbookReq;
-import org.springframework.beans.BeanUtils;
+import com.luckusyusei.wiki.util.CopyUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -22,12 +21,17 @@ public class EbookService {
         criteria.andNameLike("%" + req.getName() + "%");
         List<Ebook> ebooklist = ebookMapper.selectByExample(ebookexample);
 
-        List<EbookResp> respList =new ArrayList<>();
-        for (Ebook ebook : ebooklist) {
-            EbookResp ebookResp = new EbookResp();
-            BeanUtils.copyProperties(ebook,ebookResp);
-            respList.add(ebookResp);
-        }
-        return respList;
+//        List<EbookResp> respList =new ArrayList<>();
+//        for (Ebook ebook : ebooklist) {
+////            EbookResp ebookResp = new EbookResp();
+////            BeanUtils.copyProperties(ebook,ebookResp);
+//
+//            EbookResp ebookResp = CopyUtil.copy(ebook, EbookResp.class);
+//            respList.add(ebookResp);
+//        }
+
+        List<EbookResp> list = CopyUtil.copyList(ebooklist, EbookResp.class);
+
+        return list;
     }
 }
