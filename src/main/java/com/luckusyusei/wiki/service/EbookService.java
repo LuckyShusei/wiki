@@ -7,6 +7,7 @@ import com.luckusyusei.wiki.mapper.EbookMapper;
 import com.luckusyusei.wiki.req.EbookReq;
 import com.luckusyusei.wiki.util.CopyUtil;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -15,10 +16,12 @@ import java.util.List;
 public class EbookService {
     @Resource
     private EbookMapper ebookMapper;
-    public List<EbookResp> list(EbookReq req){
+    public List<EbookResp> list(EbookReq req) {
         EbookExample ebookexample = new EbookExample();
         EbookExample.Criteria criteria = ebookexample.createCriteria();
-        criteria.andNameLike("%" + req.getName() + "%");
+        if (!ObjectUtils.isEmpty(req.getName())) {
+            criteria.andNameLike("%" + req.getName() + "%");
+        }
         List<Ebook> ebooklist = ebookMapper.selectByExample(ebookexample);
 
 //        List<EbookResp> respList =new ArrayList<>();
