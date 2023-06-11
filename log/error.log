@@ -139,3 +139,18 @@ Caused by: java.lang.ClassNotFoundException: com.luckusyusei.wiki.service.EbookS
 	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
 	... 29 common frames omitted
+2023-06-11 23:21:40.637 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40  
+            [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8880 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
+
