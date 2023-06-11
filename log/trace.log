@@ -62,3 +62,91 @@
             [32m                  [0;39m Start
 2023-06-11 18:57:22.268 INFO  com.luckusyusei.wiki.config.WikiApplication       :20  
             [32m                  [0;39m http://127.0.0.1:8880
+2023-06-11 19:06:11.518 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 14052 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-11 19:06:11.520 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-11 19:06:11.575 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255 
+            [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-11 19:06:11.576 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255 
+            [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-11 19:06:12.822 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-11 19:06:12.834 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-11 19:06:12.835 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-11 19:06:12.835 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-11 19:06:12.942 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-11 19:06:12.943 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1366 ms
+2023-06-11 19:06:14.527 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58  
+            [32m                  [0;39m LiveReload server is running on port 35729
+2023-06-11 19:06:14.598 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-11 19:06:14.772 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-11 19:06:14.838 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.894 seconds (JVM running for 4.942)
+2023-06-11 19:06:14.873 INFO  com.luckusyusei.wiki.config.WikiApplication       :19  
+            [32m                  [0;39m Start
+2023-06-11 19:06:14.875 INFO  com.luckusyusei.wiki.config.WikiApplication       :20  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-11 19:06:23.883 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-11 19:06:23.884 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-11 19:06:23.886 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 2 ms
+2023-06-11 19:06:24.000 INFO  com.zaxxer.hikari.HikariDataSource                :110 
+            [32m                  [0;39m HikariPool-1 - Starting...
+2023-06-11 19:06:24.717 INFO  com.zaxxer.hikari.HikariDataSource                :123 
+            [32m                  [0;39m HikariPool-1 - Start completed.
+2023-06-11 19:07:34.406 INFO  com.zaxxer.hikari.HikariDataSource                :350 
+            [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-06-11 19:07:34.423 INFO  com.zaxxer.hikari.HikariDataSource                :352 
+            [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-06-11 19:07:37.261 INFO  com.luckusyusei.wiki.config.WikiApplication       :55  
+            [32m                  [0;39m Starting WikiApplication using Java 17.0.7 on DESKTOP-26OCGPN with PID 16248 (C:\Users\Salam\Desktop\java code\IDE Project\wiki\target\classes started by Salam in C:\Users\Salam\Desktop\java code\IDE Project\wiki)
+2023-06-11 19:07:37.263 INFO  com.luckusyusei.wiki.config.WikiApplication       :664 
+            [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-06-11 19:07:37.337 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255 
+            [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-11 19:07:37.338 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255 
+            [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-11 19:07:38.512 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108 
+            [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2023-06-11 19:07:38.521 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2023-06-11 19:07:38.522 INFO  org.apache.catalina.core.StandardService          :173 
+            [32m                  [0;39m Starting service [Tomcat]
+2023-06-11 19:07:38.523 INFO  org.apache.catalina.core.StandardEngine           :173 
+            [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-11 19:07:38.617 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-06-11 19:07:38.617 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289 
+            [32m                  [0;39m Root WebApplicationContext: initialization completed in 1277 ms
+2023-06-11 19:07:39.594 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58  
+            [32m                  [0;39m LiveReload server is running on port 35729
+2023-06-11 19:07:39.620 INFO  org.apache.coyote.http11.Http11NioProtocol        :173 
+            [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2023-06-11 19:07:39.690 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220 
+            [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2023-06-11 19:07:39.716 INFO  com.luckusyusei.wiki.config.WikiApplication       :61  
+            [32m                  [0;39m Started WikiApplication in 3.01 seconds (JVM running for 4.085)
+2023-06-11 19:07:39.723 INFO  com.luckusyusei.wiki.config.WikiApplication       :19  
+            [32m                  [0;39m Start
+2023-06-11 19:07:39.724 INFO  com.luckusyusei.wiki.config.WikiApplication       :20  
+            [32m                  [0;39m http://127.0.0.1:8880
+2023-06-11 19:08:55.493 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173 
+            [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-11 19:08:55.494 INFO  org.springframework.web.servlet.DispatcherServlet :525 
+            [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-06-11 19:08:55.497 INFO  org.springframework.web.servlet.DispatcherServlet :547 
+            [32m                  [0;39m Completed initialization in 2 ms
+2023-06-11 19:08:55.617 INFO  com.zaxxer.hikari.HikariDataSource                :110 
+            [32m                  [0;39m HikariPool-1 - Starting...
+2023-06-11 19:08:56.068 INFO  com.zaxxer.hikari.HikariDataSource                :123 
+            [32m                  [0;39m HikariPool-1 - Start completed.
