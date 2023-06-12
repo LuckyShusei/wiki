@@ -1,14 +1,14 @@
 drop table if exists `ebook`;
 create table `ebook`(
     `id` bigint not null comment 'id',
-    `name` varchar(50) comment '名称',
-    `category1_id` bigint comment 'category1',
-    `category2_id` bigint comment 'category2',
-    `description` varchar(200) comment 'description',
-    `cover` varchar(200) comment 'cover',
-    `doc_count` int comment '文档数',
-    `view_count` int comment '阅读量',
-    `vote_count` int comment '点赞数',
+    `name` varchar(50) comment 'name',
+    `category1_id` bigint comment 'Category1',
+    `category2_id` bigint comment 'Category2',
+    `description` varchar(200) comment 'Description',
+    `cover` varchar(200) comment 'Cover',
+    `doc_count` int comment 'Documents',
+    `view_count` int comment 'Views',
+    `vote_count` int comment 'Likes',
     primary key (`id`)
 )engine=innodb default charset=utf8mb4 comment='ebook';
 insert into `ebook`(id,name,description)values(1,'Spring boot入门','java开发');
