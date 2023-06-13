@@ -3,6 +3,7 @@ package com.luckusyusei.wiki.service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.luckusyusei.wiki.Response.EbookResp;
+import com.luckusyusei.wiki.Response.PageResp;
 import com.luckusyusei.wiki.domain.Ebook;
 import com.luckusyusei.wiki.domain.EbookExample;
 import com.luckusyusei.wiki.mapper.EbookMapper;
@@ -22,14 +23,14 @@ public class EbookService {
     private static final Logger LOG = LoggerFactory.getLogger(EbookService.class);
     @Resource
     private EbookMapper ebookMapper;
-    public List<EbookResp> list(EbookReq req) {
+    public PageResp<EbookResp> list(EbookReq req) {
         EbookExample ebookexample = new EbookExample();
         EbookExample.Criteria criteria = ebookexample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
             criteria.andNameLike("%" + req.getName() + "%");
         }
 
-        PageHelper.startPage(1,3);
+        PageHelper.startPage(req.getPage(),req.getSize());
         List<Ebook> ebooklist = ebookMapper.selectByExample(ebookexample);
 
         PageInfo<Ebook> pageInfo = new PageInfo<>(ebooklist);
@@ -47,6 +48,9 @@ public class EbookService {
 
         List<EbookResp> list = CopyUtil.copyList(ebooklist, EbookResp.class);
 
-        return list;
+        PageResp<EbookResp> pageResp = new PageResp();
+        pageResp.setTotal(pageInfo.getTotal());
+        pageResp.setList(list);
+        return pageResp;
     }
 }
