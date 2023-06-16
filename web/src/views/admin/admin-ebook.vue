@@ -16,7 +16,7 @@
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
-            <a-button type="primary">
+            <a-button type="primary" @click="edit">
               编辑
             </a-button>
             <a-button type="danger">
@@ -27,6 +27,14 @@
       </a-table>
     </a-layout-content>
   </a-layout>
+  <a-modal
+      title="ebook form"
+      v-model:visible="modalVisible"
+      :confirm-loading="modalLoading"
+      @ok="handleModalOk"
+  >
+    <p>test</p>
+  </a-modal>
 </template>
 
 <script lang="ts">
@@ -39,7 +47,7 @@ export default defineComponent({
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 2,
+      pageSize: 4,
       total: 0
     });
     const loading = ref(false);
@@ -48,7 +56,7 @@ export default defineComponent({
       {
         title: 'Cover',
         dataIndex: 'cover',
-        slots: { customRender: 'cover' }
+        slots: {customRender: 'cover'}
       },
       {
         title: 'Name',
@@ -77,7 +85,7 @@ export default defineComponent({
       {
         title: 'Action',
         key: 'action',
-        slots: { customRender: 'action' }
+        slots: {customRender: 'action'}
       }
     ];
 
@@ -88,9 +96,9 @@ export default defineComponent({
       loading.value = true;
       // 如果不清空现有数据，则编辑保存重新加载数据后，再点编辑，则列表显示的还是编辑前的数据
       axios.get("/ebook/list", {
-        params:{
-          page:params.page,
-          size:params.size
+        params: {
+          page: params.page,
+          size: params.size
         }
       }).then((response) => {
         loading.value = false;
@@ -113,6 +121,25 @@ export default defineComponent({
       });
     };
 
+// -------- 表单 ---------
+    /**
+     * 数组，[100, 101]对应：前端开发 / Vue
+     */
+
+    const modalVisible = ref(false);
+    const modalLoading = ref(false);
+    const handleModalOk = () => {
+      modalLoading.value = true;
+      setTimeout(() => {
+        modalVisible.value = false;
+        modalLoading.value = false;
+      }, 2000);
+    };
+
+    const edit = () => {
+      modalVisible.value = true;
+    };
+
     onMounted(() => {
       handleQuery({
         page:1,
@@ -126,6 +153,10 @@ export default defineComponent({
       columns,
       loading,
       handleTableChange,
+      edit,
+      modalVisible,
+      modalLoading,
+      handleModalOk
     }
   }
 });
