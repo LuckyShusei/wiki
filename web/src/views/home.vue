@@ -50,8 +50,8 @@
     <a-layout-content style="padding: 0 20px">
       <a-layout style="padding: 24px 0; background: #fff">
 
-        <a-layout-content :style="{ padding: '0 200px', minHeight: '280px' , marginTop: '-150px'}">
-          <a-list item-layout="vertical" size="large" :grid="{ gutter: 40, column: 3 }" :data-source="ebooks">
+        <a-layout-content :style="{ padding: '0 0 0 220px', minHeight: '280px' , marginTop: '-150px'}">
+          <a-list item-layout="vertical" size="large" :grid="{ gutter: 10, column: 4 }" :data-source="ebooks">
             <template #renderItem="{ item }">
               <a-list-item key="item.name">
                 <template #actions>
