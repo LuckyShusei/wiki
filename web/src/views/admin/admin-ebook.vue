@@ -16,7 +16,7 @@
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
-            <a-button type="primary" @click="edit">
+            <a-button type="primary" @click="edit(record)">
               编辑
             </a-button>
             <a-button type="danger">
@@ -33,7 +33,23 @@
       :confirm-loading="modalLoading"
       @ok="handleModalOk"
   >
-    <p>test</p>
+    <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
+      <a-form-item label="Cover">
+        <a-input v-model:value="ebook.cover" />
+      </a-form-item>
+      <a-form-item label="Name">
+        <a-input v-model:value="ebook.name" />
+      </a-form-item>
+      <a-form-item label="Category1">
+        <a-input v-model:value="ebook.categorie1Id" />
+      </a-form-item>
+        <a-form-item label="Category2">
+          <a-input v-model:value="ebook.categorie2Id" />
+      </a-form-item>
+      <a-form-item label="Description">
+        <a-input v-model:value="ebook.description" type="textarea" />
+      </a-form-item>
+    </a-form>
   </a-modal>
 </template>
 
@@ -125,7 +141,7 @@ export default defineComponent({
     /**
      * 数组，[100, 101]对应：前端开发 / Vue
      */
-
+    const ebook = ref({});//定义响应式变量ebook
     const modalVisible = ref(false);
     const modalLoading = ref(false);
     const handleModalOk = () => {
@@ -135,9 +151,10 @@ export default defineComponent({
         modalLoading.value = false;
       }, 2000);
     };
-
-    const edit = () => {
+    // 编辑
+    const edit = (record:any) => {
       modalVisible.value = true;
+      ebook.value = record //record赋值到响应式变量ebook
     };
 
     onMounted(() => {
@@ -154,6 +171,7 @@ export default defineComponent({
       loading,
       handleTableChange,
       edit,
+      ebook,
       modalVisible,
       modalLoading,
       handleModalOk
