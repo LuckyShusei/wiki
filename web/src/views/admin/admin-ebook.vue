@@ -81,6 +81,7 @@
 import { defineComponent, onMounted, ref } from 'vue';
 import axios from 'axios';
 import {message} from "ant-design-vue";
+import {Tool} from "@/Util/tool";
 
 export default defineComponent({
   name: 'AdminEbook',
@@ -194,7 +195,7 @@ export default defineComponent({
     // 编辑
     const edit = (record:any) => {
       modalVisible.value = true;
-      ebook.value = record //record赋值到响应式变量ebook
+      ebook.value =Tool.copy(record); //record赋值到响应式变量ebook
     };
     // 新增
     const add = () => {
