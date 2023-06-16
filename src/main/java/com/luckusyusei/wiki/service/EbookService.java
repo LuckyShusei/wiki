@@ -2,7 +2,7 @@ package com.luckusyusei.wiki.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.luckusyusei.wiki.Response.EbookResp;
+import com.luckusyusei.wiki.Response.EbookQueryResp;
 import com.luckusyusei.wiki.Response.PageResp;
 import com.luckusyusei.wiki.domain.Ebook;
 import com.luckusyusei.wiki.domain.EbookExample;
@@ -28,7 +28,7 @@ public class EbookService {
     @Resource
     private SnowFlake snowFlake;
 
-    public PageResp<EbookResp> list(EbookQueryReq req) {
+    public PageResp<EbookQueryResp> list(EbookQueryReq req) {
         EbookExample ebookexample = new EbookExample();
         EbookExample.Criteria criteria = ebookexample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
@@ -51,9 +51,9 @@ public class EbookService {
 //            respList.add(ebookResp);
 //        }
 
-        List<EbookResp> list = CopyUtil.copyList(ebooklist, EbookResp.class);
+        List<EbookQueryResp> list = CopyUtil.copyList(ebooklist, EbookQueryResp.class);
 
-        PageResp<EbookResp> pageResp = new PageResp();
+        PageResp<EbookQueryResp> pageResp = new PageResp();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
         return pageResp;
@@ -66,7 +66,8 @@ public class EbookService {
         }else{//更新
             ebookMapper.updateByPrimaryKey(ebook);
         }
-
-
+    }
+    public void delete(Long id){
+      ebookMapper.deleteByPrimaryKey(id);
     }
 }

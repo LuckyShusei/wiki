@@ -23,10 +23,19 @@
           <a-space size="small">
             <a-button type="primary" @click="edit(record)">
               编辑
+
             </a-button>
-            <a-button type="danger">
-              删除
-            </a-button>
+            <a-popconfirm
+                title="Delete this ebook? You might not be able to recover it."
+                ok-text="OK"
+                cancel-text="Cancel"
+                @confirm="handleDelete(record.id)"
+            >
+              <a-button type="danger">
+                删除
+              </a-button>
+            </a-popconfirm>
+
           </a-space>
         </template>
       </a-table>
@@ -131,7 +140,7 @@ export default defineComponent({
       console.log("看看自带的分页参数都有啥：" + pagination);
       handleQuery({
         page: pagination.current,
-        size: pagination.pageSize
+        size: pagination.pageSize,
       });
     };
 
@@ -144,15 +153,12 @@ export default defineComponent({
     const modalLoading = ref(false);
     const handleModalOk = () => {
       modalLoading.value = true;
-
       axios.post("/ebook/save",ebook.value).then((response) => {
-        modalVisible.value = false;
-        modalLoading.value = false;
         const data = response.data;
         if(data.success){
           modalVisible.value = false;
           modalLoading.value = false;
-          //重新加载列表
+            //重新加载列表
           handleQuery({
             page: pagination.value.current,
             size: pagination.value.pageSize,
@@ -171,11 +177,24 @@ export default defineComponent({
       modalVisible.value = true;
       ebook.value = {};
     };
+    // 删除
+    const handleDelete = (id: number) => {
+      axios.delete("/ebook/delete/" + id).then((response) => {
+        const data = response.data;
+        if (data.success) {
+          //重新加载列表
+          handleQuery({
+            page: pagination.value.current,
+            size: pagination.value.pageSize,
+          });
+        }
+      });
+    };
 
     onMounted(() => {
       handleQuery({
         page:1,
-      size:pagination.value.pageSize
+      size:pagination.value.pageSize,
       });
     });
 
@@ -189,10 +208,13 @@ export default defineComponent({
       edit,
       add,
 
+
       ebook,
       modalVisible,
       modalLoading,
-      handleModalOk
+      handleModalOk,
+
+      handleDelete
     }
   }
 });
