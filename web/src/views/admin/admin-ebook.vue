@@ -118,12 +118,9 @@ export default defineComponent({
       },
       {
         title: 'Category1',
-        dataIndex: 'category1Id'
+        slots: {customRender: 'category'}
       },
-      {
-        title: 'Category2',
-        dataIndex: 'category2Id'
-      },
+
       {
         title: ' Documents',
         dataIndex: 'docCount'
@@ -297,6 +294,7 @@ export default defineComponent({
       loading,
       handleTableChange,
       handleQuery,
+      getCategoryName,
 
       edit,
       add,
