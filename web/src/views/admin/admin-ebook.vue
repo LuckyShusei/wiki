@@ -3,6 +3,11 @@
     <a-layout-content
         :style="{background: '#fff',padding: '24px',margin:0,minHeight: '280px' }"
     >
+      <p>
+        <a-button type="primary" @click="add()" size="large">
+          新增
+        </a-button>
+      </p>
       <a-table
           :columns="columns"
           :row-key="record => record.id"
@@ -40,11 +45,8 @@
       <a-form-item label="Name">
         <a-input v-model:value="ebook.name" />
       </a-form-item>
-      <a-form-item label="Category1">
+      <a-form-item label="Category">
         <a-input v-model:value="ebook.category1Id" />
-      </a-form-item>
-        <a-form-item label="Category2">
-          <a-input v-model:value="ebook.category2Id" />
       </a-form-item>
       <a-form-item label="Description">
         <a-input v-model:value="ebook.description" type="textarea" />
@@ -63,7 +65,7 @@ export default defineComponent({
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 4,
+      pageSize: 5,
       total: 0
     });
     const loading = ref(false);
@@ -79,12 +81,8 @@ export default defineComponent({
         dataIndex: 'name'
       },
       {
-        title: 'Category1',
+        title: 'Category',
         dataIndex: 'category1Id'
-      },
-      {
-        title: 'Category2',
-        dataIndex: 'category2Id'
       },
       {
         title: ' Documents',
@@ -168,6 +166,11 @@ export default defineComponent({
       modalVisible.value = true;
       ebook.value = record //record赋值到响应式变量ebook
     };
+    // 新增
+    const add = () => {
+      modalVisible.value = true;
+      ebook.value = {};
+    };
 
     onMounted(() => {
       handleQuery({
@@ -182,7 +185,10 @@ export default defineComponent({
       columns,
       loading,
       handleTableChange,
+
       edit,
+      add,
+
       ebook,
       modalVisible,
       modalLoading,
