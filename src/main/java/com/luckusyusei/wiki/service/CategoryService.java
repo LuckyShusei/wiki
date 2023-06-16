@@ -30,6 +30,7 @@ public class CategoryService {
 
     public PageResp<CategoryQueryResp> list(CategoryQueryReq req) {
         CategoryExample categoryexample = new CategoryExample();
+        categoryexample.setOrderByClause("sort asc");
         CategoryExample.Criteria criteria = categoryexample.createCriteria();
 
         PageHelper.startPage(req.getPage(),req.getSize());
@@ -54,6 +55,15 @@ public class CategoryService {
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
         return pageResp;
+    }
+    public List<CategoryQueryResp> all() {
+        CategoryExample categoryexample = new CategoryExample();
+        categoryexample.setOrderByClause("sort asc");
+        List<Category> categorylist = categoryMapper.selectByExample(categoryexample);
+        //列表复制
+        List<CategoryQueryResp> list = CopyUtil.copyList(categorylist, CategoryQueryResp.class);
+
+        return list;
     }
     public void save(CategorySaveReq req){
         Category category = CopyUtil.copy(req,Category.class);
