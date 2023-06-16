@@ -41,10 +41,10 @@
         <a-input v-model:value="ebook.name" />
       </a-form-item>
       <a-form-item label="Category1">
-        <a-input v-model:value="ebook.categorie1Id" />
+        <a-input v-model:value="ebook.category1Id" />
       </a-form-item>
         <a-form-item label="Category2">
-          <a-input v-model:value="ebook.categorie2Id" />
+          <a-input v-model:value="ebook.category2Id" />
       </a-form-item>
       <a-form-item label="Description">
         <a-input v-model:value="ebook.description" type="textarea" />
@@ -146,10 +146,22 @@ export default defineComponent({
     const modalLoading = ref(false);
     const handleModalOk = () => {
       modalLoading.value = true;
-      setTimeout(() => {
+
+      axios.post("/ebook/save",ebook.value).then((response) => {
         modalVisible.value = false;
         modalLoading.value = false;
-      }, 2000);
+        const data = response.data;
+        if(data.success){
+          modalVisible.value = false;
+          modalLoading.value = false;
+          //重新加载列表
+          handleQuery({
+            page: pagination.value.current,
+            size: pagination.value.pageSize,
+          });
+        }
+
+    });
     };
     // 编辑
     const edit = (record:any) => {

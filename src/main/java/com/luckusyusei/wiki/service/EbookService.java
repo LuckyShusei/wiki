@@ -7,7 +7,8 @@ import com.luckusyusei.wiki.Response.PageResp;
 import com.luckusyusei.wiki.domain.Ebook;
 import com.luckusyusei.wiki.domain.EbookExample;
 import com.luckusyusei.wiki.mapper.EbookMapper;
-import com.luckusyusei.wiki.req.EbookReq;
+import com.luckusyusei.wiki.req.EbookQueryReq;
+import com.luckusyusei.wiki.req.EbookSaveReq;
 import com.luckusyusei.wiki.util.CopyUtil;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -23,7 +24,7 @@ public class EbookService {
     private static final Logger LOG = LoggerFactory.getLogger(EbookService.class);
     @Resource
     private EbookMapper ebookMapper;
-    public PageResp<EbookResp> list(EbookReq req) {
+    public PageResp<EbookResp> list(EbookQueryReq req) {
         EbookExample ebookexample = new EbookExample();
         EbookExample.Criteria criteria = ebookexample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
@@ -52,5 +53,15 @@ public class EbookService {
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
         return pageResp;
+    }
+    public void save(EbookSaveReq req){
+        Ebook ebook = CopyUtil.copy(req,Ebook.class);
+        if(ObjectUtils.isEmpty(req.getId())){
+        ebookMapper.insert(ebook);
+        }else{//更新
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
+
+
     }
 }
