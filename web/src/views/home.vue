@@ -5,30 +5,27 @@
           mode="inline"
           :style="{ height: '100%', borderRight: 0 }"
           @click="handleClick"
-          :openKeys="openKeys"
       >
         <a-menu-item key="welcome">
-          <router-link to="'/'">
           <MailOutlined />
-          <span>欢迎</span>
-          </router-link>
+          <span>Welcome</span>
         </a-menu-item>
-        <a-sub-menu v-for="item in level1" :key="item.id" :disabled="true">
+        <a-sub-menu v-for="item in level1" :key="item.id" >
           <template v-slot:title>
             <span><user-outlined />{{item.name}}</span>
           </template>
           <a-menu-item v-for="child in item.children" :key="child.id">
             <MailOutlined /><span>{{child.name}}</span>
           </a-menu-item>
-        </a-sub-menu>
+     </a-sub-menu>
       </a-menu>
     </a-layout-sider>
 
     <a-layout-content
-        :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
+        :style="{ background: '#fff', padding:'0 0 0 200px', margin: 0, minHeight: '280px' ,marginTop: '-150px' }"
     >
       <div class="welcome" v-show="isShowWelcome">
-        <the-welcome></the-welcome>
+        <h1>Welcome to use WiKi</h1>
       </div>
       <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks">
         <template #renderItem="{ item }">
@@ -85,10 +82,11 @@ import {Tool} from "@/Util/tool";
 
 export default defineComponent({
   name: 'Home',
+
   setup() {
-    console.log("setup");
     const ebooks = ref();
     // const ebooks1 = reactive({books: []});
+
     const level1 =  ref();
     let categorys: any;
     /**
@@ -109,41 +107,47 @@ export default defineComponent({
         }
       });
     };
-    const handleClick =() => {
-      console.log("menu click")
+    const isShowWelcome = ref(true);
+    const handleClick = (value: any) =>{
+      // console.log("menu click",value)
+      isShowWelcome.value = value.key === 'welcome';
     };
+
+
 
     onMounted(() => {
       handleQueryCategory();
-      axios.get("/ebook/list",{
-        params:{
-        page:1,
-          size:1000
-      }
-      }).then((response) => {
-        const data = response.data;
-        ebooks.value = data.content.list;
-      })
+     axios.get("/ebook/list",{
+       params:{
+         page: 1,
+         size: 1000
+       }
+    }).then((reponse) => {
+      const data = reponse.data;
+      ebooks.value = data.content.list;
+      });
     });
 
     return {
       ebooks,
-      // books2: toRef(ebooks1, "books"),
+      // ebooks2: toRef(ebooks1, "books"),
       // listData,
       pagination: {
-        onChange: (page: number) => {
+        onChange: (page: any) => {
           console.log(page);
         },
         pageSize: 3,
       },
       actions: [
-        {type: 'StarOutlined', text: '156'},
-        {type: 'LikeOutlined', text: '156'},
-        {type: 'MessageOutlined', text: '2'},
+        { type: 'StarOutlined', text: '156' },
+        { type: 'LikeOutlined', text: '156' },
+        { type: 'MessageOutlined', text: '2' },
       ],
 
       handleClick,
       level1,
+      isShowWelcome
+
     }
   }
 });
