@@ -11,12 +11,12 @@
           </a-form-item>
           <a-form-item>
             <a-button type="primary" @click="handleQuery({page: 1, size: pagination.pageSize})">
-              查询
+              SEARCH
             </a-button>
           </a-form-item>
           <a-form-item>
             <a-button type="primary" @click="add()">
-              新增
+              NEW
             </a-button>
           </a-form-item>
         </a-form>
@@ -39,11 +39,11 @@
           <a-space size="small">
             <router-link to="/admin/admin-doc">
               <a-button type="primary" @click="edit(record)">
-                Document Management
+                DOCUMENT
               </a-button>
             </router-link>
             <a-button type="primary" @click="edit(record)">
-              Edit
+              EDIT
             </a-button>
             <a-popconfirm
                 title="Delete this ebook? You might not be able to recover it."
@@ -52,7 +52,7 @@
                 @confirm="handleDelete(record.id)"
             >
               <a-button type="danger">
-                Delete
+                DELETE
               </a-button>
             </a-popconfirm>
 

@@ -11,12 +11,12 @@
 <!--          </a-form-item>-->
           <a-form-item>
             <a-button type="primary" @click="handleQuery()">
-              Search
+              SEARCH
             </a-button>
           </a-form-item>
           <a-form-item>
             <a-button type="primary" @click="add()">
-              New
+              NEW
             </a-button>
           </a-form-item>
         </a-form>
@@ -34,7 +34,7 @@
         <template v-slot:action="{ text, record }">
           <a-space size="small">
             <a-button type="primary" @click="edit(record)">
-            Edit
+            EDIT
             </a-button>
             <a-popconfirm
                 title="Delete this category? You might not be able to recover it."
@@ -43,7 +43,7 @@
                 @confirm="handleDelete(record.id)"
             >
               <a-button type="danger">
-                Delete
+                DELETE
               </a-button>
             </a-popconfirm>
 
@@ -63,13 +63,12 @@
         <a-input v-model:value="category.name" />
       </a-form-item>
       <a-form-item label="Parent ID">
-        <a-input v-model:value="category.parent" />
         <a-select
             v-model:value="category.parent"
             ref="select"
         >
           <a-select-option :value="0">
-            无
+            None
           </a-select-option>
           <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="category.id === c.id">
             {{c.name}}
@@ -138,6 +137,7 @@ export default defineComponent({
     const handleQuery = () => {
       loading.value = true;
       // 如果不清空现有数据，则编辑保存重新加载数据后，再点编辑，则列表显示的还是编辑前的数据
+      level1.value = [];
       axios.get("/category/all").then((response) => {
         loading.value = false;
         const data = response.data;
