@@ -1,3 +1,26 @@
+# 文档表
+drop table if exists `doc`;
+create table `doc`(
+    `id` bigint not null comment 'id',
+    `ebook_id` bigint not null default 0 comment 'ebook-id',
+    `parent` bigint not null default 0 comment 'Parent ID',
+    `name` varchar(50) not null comment 'Name',
+    `sort` int comment 'Sort',
+    `view_count` int default 0 comment 'ViewCount',
+    `vote_count` int default 0 comment 'VoteCount',
+    primary key (`id`)
+)engine=innodb default charset=utf8mb4 comment='Documents';
+
+insert into `doc`(id,ebook_id,parent,name,sort,view_count,vote_count) values (1,1,0,'Document1',1,0,0);
+insert into `doc`(id,ebook_id,parent,name,sort,view_count,vote_count) values (2,1,1,'Document1.1',1,0,0);
+insert into `doc`(id,ebook_id,parent,name,sort,view_count,vote_count) values (3,1,0,'Document2',2,0,0);
+insert into `doc`(id,ebook_id,parent,name,sort,view_count,vote_count) values (4,1,3,'Document2.1',1,0,0);
+insert into `doc`(id,ebook_id,parent,name,sort,view_count,vote_count) values (5,1,3,'Document2.2',2,0,0);
+insert into `doc`(id,ebook_id,parent,name,sort,view_count,vote_count) values (6,1,5,'Document2.2.1',1,0,0);
+
+
+
+
 # 分类
 drop table if exists `category`;
 create table `category`
@@ -29,8 +52,8 @@ drop table if exists `ebook`;
 create table `ebook`(
     `id` bigint not null comment 'id',
     `name` varchar(50) comment 'name',
-    `category1Id` bigint comment 'category1Id',
-    `category2Id` bigint comment 'category2Id',
+    `category1_id` bigint comment 'category1Id',
+    `category2_id` bigint comment 'category2Id',
     `description` varchar(200) comment 'Description',
     `cover` varchar(200) comment 'Cover',
     `doc_count` int comment 'Documents',
