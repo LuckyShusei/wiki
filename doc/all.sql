@@ -2,7 +2,7 @@
 drop table if exists `doc`;
 create table `doc`(
     `id` bigint not null comment 'id',
-    `ebook_id` bigint not null default 0 comment 'ebook-id',
+    `ebook_id` bigint not null default 0 comment 'ebookId',
     `parent` bigint not null default 0 comment 'Parent ID',
     `name` varchar(50) not null comment 'Name',
     `sort` int comment 'Sort',

@@ -1,17 +1,15 @@
 package com.luckusyusei.wiki.req;
 
-import javax.validation.constraints.NotNull;
-
 public class DocSaveReq {
-    @NotNull(message="【Name】cannot be empty.")
+//    @NotNull(message="【Name】cannot be empty.")
     private Long id;
-    @NotNull(message="【ID】cannot be empty.")
+//    @NotNull(message="【ID】cannot be empty.")
     private Long ebookId;
-    @NotNull(message="【Parent ID】cannot be empty.")
+//    @NotNull(message="【Parent ID】cannot be empty.")
     private Long parent;
-    @NotNull(message="【Name】cannot be empty.")
+//    @NotNull(message="【Name】cannot be empty.")
     private String name;
-    @NotNull(message="【Sort】cannot be empty.")
+//    @NotNull(message="【Sort】cannot be empty.")
     private Integer sort;
 
     private Integer viewCount;
@@ -76,18 +74,14 @@ public class DocSaveReq {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", ebookId=").append(ebookId);
-        sb.append(", parent=").append(parent);
-        sb.append(", name=").append(name);
-        sb.append(", sort=").append(sort);
-        sb.append(", viewCount=").append(viewCount);
-        sb.append(", voteCount=").append(voteCount);
-        sb.append("]");
-        return sb.toString();
+        return "DocSaveReq{" +
+                "id=" + id +
+                ", ebookId=" + ebookId +
+                ", parent=" + parent +
+                ", name='" + name + '\'' +
+                ", sort=" + sort +
+                ", viewCount=" + viewCount +
+                ", voteCount=" + voteCount +
+                '}';
     }
 }

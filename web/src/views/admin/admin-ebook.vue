@@ -37,9 +37,9 @@
         </template>
          <template v-slot:action="{ text, record }">
           <a-space size="small">
-            <router-link to="/admin/admin-doc">
+            <router-link :to="'/admin/admin-doc?ebookId=' +record.id">
               <a-button type="primary" @click="edit(record)">
-                DOCUMENT
+                DOCUMENTS
               </a-button>
             </router-link>
             <a-button type="primary" @click="edit(record)">
@@ -100,6 +100,8 @@ import {Tool} from "@/Util/tool";
 export default defineComponent({
   name: 'AdminEbook',
   setup() {
+
+
     const param = ref();
     param.value ={};
     const ebooks = ref();

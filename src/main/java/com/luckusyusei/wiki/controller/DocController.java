@@ -1,7 +1,7 @@
 package com.luckusyusei.wiki.controller;
 
-import com.luckusyusei.wiki.Response.DocQueryResp;
 import com.luckusyusei.wiki.Response.CommonResp;
+import com.luckusyusei.wiki.Response.DocQueryResp;
 import com.luckusyusei.wiki.Response.PageResp;
 import com.luckusyusei.wiki.req.DocQueryReq;
 import com.luckusyusei.wiki.req.DocSaveReq;
@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -38,10 +39,11 @@ public class DocController {
         docService.save(req);
         return resp;
     }
-    @DeleteMapping  ("/delete/{id}")//新增一个delete接口
-    public CommonResp delete(@PathVariable Long id){
+    @DeleteMapping("/delete/{idsStr}")
+    public CommonResp delete(@PathVariable String idsStr) {
         CommonResp resp = new CommonResp<>();
-        docService.delete(id);
+        List<String> list = Arrays.asList(idsStr.split(","));
+        docService.delete(list);
         return resp;
     }
 

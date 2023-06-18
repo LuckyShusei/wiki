@@ -5,10 +5,6 @@
     >
       <p>
         <a-form layout="inline" :model="param">
-<!--          <a-form-item>-->
-<!--            <a-input v-model:value="param.name" placeholder="Name">-->
-<!--            </a-input>-->
-<!--          </a-form-item>-->
           <a-form-item>
             <a-button type="primary" @click="handleQuery()">
               SEARCH
@@ -27,9 +23,11 @@
           :data-source="level1"
           :loading="loading"
           :pagination="false"
+          size="small"
+          :defaultExpandAllRows="true"
       >
-        <template #cover="{ text: cover }">
-          <img v-if="cover" :src="cover" alt="avatar" style="max-width: 50px; max-height: 50px;" />
+        <template #name="{ text, record }">
+          {{record.sort}} {{text}}
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
@@ -83,7 +81,7 @@
             ref="select"
         >
           <a-select-option :value="0">
-            无
+            None
           </a-select-option>
           <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="doc.id === c.id">
             {{c.name}}
@@ -92,6 +90,9 @@
       </a-form-item>
       <a-form-item label="Sort">
         <a-input v-model:value="doc.sort" type="textarea" />
+      </a-form-item>
+      <a-form-item label="Content">
+       <div id="content"></div>
       </a-form-item>
     </a-form>
   </a-modal>
@@ -103,14 +104,30 @@ import axios from 'axios';
 import {message} from "ant-design-vue";
 import {Tool} from "@/Util/tool";
 
+import {useRoute} from "vue-router";
+ import E from '@wangeditor/editor'
+
+
+
 export default defineComponent({
   name: 'AdminDoc',
   setup() {
+    const route = useRoute();
+    console.log("路由：", route);
+    console.log("route.path：", route.path);
+    console.log("route.query：", route.query);
+    console.log("route.param：", route.params);
+    console.log("route.fullPath：", route.fullPath);
+    console.log("route.name：", route.name);
+    console.log("route.meta：", route.meta);
+
     const param = ref();
     param.value ={};
     const docs = ref();
-
     const loading = ref(false);
+
+    const treeSelectData = ref();
+    treeSelectData.value = [];
 
     const columns = [
       {
@@ -143,8 +160,8 @@ export default defineComponent({
      *   }]
      * }]
      */
-    const level1 = ref(); // 一级分类树，children属性就是二级分类
-    // level1.value = [];
+    const level1 = ref();// 一级分类树，children属性就是二级分类
+     level1.value = [];
 
     /**
      * 数据查询
@@ -175,11 +192,13 @@ export default defineComponent({
     /**
      * 数组，[100, 101]对应：前端开发 / Vue
      */
-    const treeSelectData = ref();
-    treeSelectData.value = [];
+
     const doc = ref({});//定义响应式变量doc
     const modalVisible = ref(false);
     const modalLoading = ref(false);
+
+
+
     const handleModalOk = () => {
       modalLoading.value = true;
       axios.post("/doc/save",doc.value).then((response) => {
@@ -225,6 +244,38 @@ export default defineComponent({
         }
       }
     };
+
+    const ids:Array<string> =[];
+    /**
+     * 查找整根树枝
+     */
+    const getDeleteIds = (treeSelectData: any, id: any) => {
+      // console.log(treeSelectData, id);
+      // 遍历数组，即遍历某一层节点
+      for (let i = 0; i < treeSelectData.length; i++) {
+        const node = treeSelectData[i];
+        if (node.id === id) {
+          // 如果当前节点就是目标节点
+          console.log("disabled", node);
+          // 将目标id放入ids
+          // node.disabled = true;
+          ids.push(id);
+          // 遍历所有子节点
+          const children = node.children;
+          if (Tool.isNotEmpty(children)) {
+            for (let j = 0; j < children.length; j++) {
+              getDeleteIds(children, children[j].id)
+            }
+          }
+        } else {
+          // 如果当前节点不是目标节点，则到其子节点再找找看。
+          const children = node.children;
+          if (Tool.isNotEmpty(children)) {
+            getDeleteIds(children, id);
+          }
+        }
+      }
+    };
           // 编辑
     const edit = (record:any) => {
       modalVisible.value = true;
@@ -241,14 +292,19 @@ export default defineComponent({
     // 新增
     const add = () => {
       modalVisible.value = true;
-      doc.value = {};
+      doc.value = {
+        ebookId: route.query.ebookId
+      };
       treeSelectData.value = Tool.copy(level1.value);
       // 为选择树添加一个"无"
       treeSelectData.value.unshift({id: 0, name: 'None'});
     };
     // 删除
     const handleDelete = (id: number) => {
-      axios.delete("/doc/delete/" + id).then((response) => {
+      // console.log(level1.value,id);
+      getDeleteIds(level1.value,id);
+      // console.log(ids);
+      axios.delete("/doc/delete/" + ids.join(",")).then((response) => {
         const data = response.data;
         if (data.success) {
           //重新加载列表
