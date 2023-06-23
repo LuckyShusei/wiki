@@ -9,7 +9,7 @@ create table `user`
     primary key (`id`),
     unique key `login_name_unique` (`login_name`)
 )engine=innodb default charset=utf8mb4 comment='user';
-
+insert into `user`(id,`login_name`,`name`,`password`)values(1,'test','test','test');
 #内容表
 drop table if exists `content`;
 create table `content`
