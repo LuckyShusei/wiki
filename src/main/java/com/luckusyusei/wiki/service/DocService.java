@@ -4,8 +4,10 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.luckusyusei.wiki.Response.DocQueryResp;
 import com.luckusyusei.wiki.Response.PageResp;
+import com.luckusyusei.wiki.domain.Content;
 import com.luckusyusei.wiki.domain.Doc;
 import com.luckusyusei.wiki.domain.DocExample;
+import com.luckusyusei.wiki.mapper.ContentMapper;
 import com.luckusyusei.wiki.mapper.DocMapper;
 import com.luckusyusei.wiki.req.DocQueryReq;
 import com.luckusyusei.wiki.req.DocSaveReq;
@@ -25,6 +27,9 @@ public class DocService {
     private static final Logger LOG = LoggerFactory.getLogger(DocService.class);
     @Resource
     private DocMapper docMapper;
+
+    @Resource
+    private ContentMapper contentMapper;
     @Resource
     private SnowFlake snowFlake;
 
@@ -65,14 +70,25 @@ public class DocService {
 
         return list;
     }
+
+    /**
+     * 保存
+     */
     public void save(DocSaveReq req){
         Doc doc = CopyUtil.copy(req,Doc.class);
+        Content content = CopyUtil.copy(req,Content.class);
         if(ObjectUtils.isEmpty(req.getId())){
             doc.setId(snowFlake.nextId());
             docMapper.insert(doc);
+            content.setId(doc.getId());
+            contentMapper.insert(content);
         }else{//更新
             docMapper.updateByPrimaryKey(doc);
-        }
+            int count = contentMapper.updateByPrimaryKeyWithBLOBs(content);
+            if(count == 0){
+                contentMapper.insert(content);
+            }
+            }
     }
     public void delete(Long id){
       docMapper.deleteByPrimaryKey(id);

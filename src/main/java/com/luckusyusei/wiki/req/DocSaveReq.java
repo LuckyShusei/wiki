@@ -15,6 +15,7 @@ public class DocSaveReq {
     private Integer viewCount;
 
     private Integer voteCount;
+    private String content;
 
     public Long getId() {
         return id;
@@ -42,6 +43,14 @@ public class DocSaveReq {
 
     public String getName() {
         return name;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public void setName(String name) {
@@ -82,6 +91,7 @@ public class DocSaveReq {
                 ", sort=" + sort +
                 ", viewCount=" + viewCount +
                 ", voteCount=" + voteCount +
+                ", content='" + content + '\'' +
                 '}';
     }
 }

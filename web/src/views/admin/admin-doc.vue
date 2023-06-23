@@ -125,8 +125,6 @@ export default defineComponent({
     const docs = ref();
     const loading = ref(false);
 
-    const treeSelectData = ref();
-    treeSelectData.value = [];
 
     const columns = [
       {
@@ -192,15 +190,19 @@ export default defineComponent({
      * 数组，[100, 101]对应：前端开发 / Vue
      */
 
-    const doc = ref({});//定义响应式变量doc
+    const doc = ref();//定义响应式变量doc
     const modalVisible = ref(false);
     const modalLoading = ref(false);
 
 
+    const treeSelectData = ref();
+    treeSelectData.value = [];
 
 
-    const handleModalOk = () => {
+    const handleSave = () => {
       modalLoading.value = true;
+      // doc.value.content = editor.txt.html();
+
       axios.post("/doc/save",doc.value).then((response) => {
         modalLoading.value = false;
         const data = response.data;
@@ -344,7 +346,7 @@ export default defineComponent({
       doc,
       modalVisible,
       modalLoading,
-      handleModalOk,
+      handleSave,
 
       handleDelete,
       treeSelectData
