@@ -1,6 +1,6 @@
 <template>
   <a-layout-footer style="text-align: center">
-    Wiki ©2023 Created by Syusei
+    My Library ©2023 Created by Syusei
   </a-layout-footer>
 </template>
 

@@ -1,101 +1,99 @@
 <template>
   <a-layout>
     <a-layout-content
-        :style="{background: '#fff',padding: '24px',margin:0,minHeight: '280px' }"
+        :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
-      <p>
-        <a-form layout="inline" :model="param">
-          <a-form-item>
-            <a-button type="primary" @click="handleQuery()">
-              SEARCH
-            </a-button>
-          </a-form-item>
-          <a-form-item>
-            <a-button type="primary" @click="add()">
-              NEW
-            </a-button>
-          </a-form-item>
-        </a-form>
-      </p>
-      <a-table
-          :columns="columns"
-          :row-key="record => record.id"
-          :data-source="level1"
-          :loading="loading"
-          :pagination="false"
-          size="small"
-          :defaultExpandAllRows="true"
-      >
-        <template #name="{ text, record }">
-          {{record.sort}} {{text}}
-        </template>
-        <template v-slot:action="{ text, record }">
-          <a-space size="small">
+      <a-row :gutter="24">
+        <a-col :span="8">
+          <p>
+            <a-form layout="inline" :model="param">
+              <a-form-item>
+                <a-button type="primary" @click="handleQuery()">
+                  SEARCH
+                </a-button>
+              </a-form-item>
+              <a-form-item>
+                <a-button type="primary" @click="add()">
+                  NEW
+                </a-button>
+              </a-form-item>
+            </a-form>
+          </p>
+          <a-table
+              v-if="level1.length > 0"
+              :columns="columns"
+              :row-key="record => record.id"
+              :data-source="level1"
+              :loading="loading"
+              :pagination="false"
+              size="small"
+              :defaultExpandAllRows="true"
+          >
+            <template #name="{ text, record }">
+              {{record.sort}} {{text}}
+            </template>
+            <template v-slot:action="{ text, record }">
+              <a-space size="small">
+                <a-button type="primary" @click="edit(record)" size="small">
+                  EDIT
+                </a-button>
+                <a-popconfirm
+                    title="删除后不可恢复，确认删除?"
+                    ok-text="OK"
+                    cancel-text="Cancel"
+                    @confirm="handleDelete(record.id)"
+                >
+                  <a-button type="danger" size="small">
+                    DELETE
+                  </a-button>
+                </a-popconfirm>
+              </a-space>
+            </template>
+          </a-table>
+        </a-col>
+        <a-col :span="16">
+          <p>
+            <a-form layout="inline" :model="param">
+              <a-form-item>
+                <a-button type="primary" @click="handleSave()">
+                  SAVE
+                </a-button>
+              </a-form-item>
+            </a-form>
+          </p>
+          <a-form :model="doc" layout="vertical">
+            <a-form-item>
+              <a-input v-model:value="doc.name" placeholder="Name"/>
+            </a-form-item>
+            <a-form-item>
+              <a-tree-select
+                  v-model:value="doc.parent"
+                  style="width: 100%"
+                  :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
+                  :tree-data="treeSelectData"
+                  placeholder="Please choose Parent ID"
+                  tree-default-expand-all
+                  :replaceFields="{title: 'name', key: 'id', value: 'id'}"
+              >
+              </a-tree-select>
+            </a-form-item>
+            <a-form-item>
+              <a-input v-model:value="doc.sort" placeholder="Sort"/>
+            </a-form-item>
+            <a-form-item >
+                <a-input v-model:value="doc.content" type="Content" />
+              <div id="content"></div>
+            </a-form-item>
+          </a-form>
+        </a-col>
+      </a-row>
 
-            <a-button type="primary" @click="edit(record)">
-              EDIT
-            </a-button>
-            <a-popconfirm
-                title="Delete this doc? You might not be able to recover it."
-                ok-text="OK"
-                cancel-text="Cancel"
-                @confirm="handleDelete(record.id)"
-            >
-              <a-button type="danger">
-                DELETE
-              </a-button>
-            </a-popconfirm>
 
-          </a-space>
-        </template>
-      </a-table>
+
     </a-layout-content>
   </a-layout>
-  <a-modal
-      title="doc form"
-      v-model:visible="modalVisible"
-      :confirm-loading="modalLoading"
-      @ok="handleModalOk"
-  >
-<!--    表单  -->
-    <a-form :model="doc" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
-      <a-form-item label="Name">
-        <a-input v-model:value="doc.name" />
-      </a-form-item>
-      <a-form-item label="Parent ID">
-        <a-tree-select
-            v-model:value="doc.parent"
-            style="width: 100%"
-            :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
-            :tree-data="treeSelectData"
-            placeholder="Pl ease select Parent ID"
-            tree-default-expand-all
-            :replaceFields="{title:'name',key:'id',value:'id'}"
-        >
-        </a-tree-select>
-      </a-form-item>
-      <a-form-item label="Parent ID">
-        <a-input v-model:value="doc.parent" />
-        <a-select
-            v-model:value="doc.parent"
-            ref="select"
-        >
-          <a-select-option :value="0">
-            None
-          </a-select-option>
-          <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="doc.id === c.id">
-            {{c.name}}
-          </a-select-option>
-        </a-select>
-      </a-form-item>
-      <a-form-item label="Sort">
-        <a-input v-model:value="doc.sort" type="textarea" />
-      </a-form-item>
-      <a-form-item label="Content">
-       <div id="content"></div>
-      </a-form-item>
-    </a-form>
-  </a-modal>
+
+
 </template>
 
 <script lang="ts">
@@ -105,7 +103,8 @@ import {message} from "ant-design-vue";
 import {Tool} from "@/Util/tool";
 
 import {useRoute} from "vue-router";
- import E from '@wangeditor/editor'
+import '@wangeditor/editor/dist/css/style.css'
+import { createEditor, createToolbar } from '@wangeditor/editor'
 
 
 
@@ -196,6 +195,7 @@ export default defineComponent({
     const doc = ref({});//定义响应式变量doc
     const modalVisible = ref(false);
     const modalLoading = ref(false);
+
 
 
 
@@ -315,6 +315,18 @@ export default defineComponent({
 
     onMounted(() => {
       handleQuery();
+      // 创建编辑器
+
+      const editor = createEditor({
+        selector: '#content'
+      })
+      // editor.config.zIndex =0;
+      // 创建工具栏
+      const toolbar = createToolbar({
+        editor,
+        selector: '#content'
+      })
+
     });
 
     return {
@@ -341,3 +353,9 @@ export default defineComponent({
 });
 </script>
 
+<style scoped>
+img {
+  width: 50px;
+  height: 50px;
+}
+</style>

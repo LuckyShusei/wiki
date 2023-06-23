@@ -1,3 +1,11 @@
+drop table if exists `content`;
+create table `content`
+(
+    `id`      bigint     not null comment 'Doc id',
+    `content` mediumtext not null comment 'Content',
+    primary key (`id`)
+)engine=innodb default charset=utf8mb4 comment='Doc Content';
+
 # 文档表
 drop table if exists `doc`;
 create table `doc`(
