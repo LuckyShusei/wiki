@@ -1,3 +1,16 @@
+#用户表
+drop table if exists `user`;
+create table `user`
+(
+    `id`  bigint not null comment 'ID',
+    `login_name` varchar(50) not null comment 'login_name',
+    `name` varchar(50) not null comment 'nickname',
+    `password` char(32) not null comment 'password',
+    primary key (`id`),
+    unique key `login_name_unique` (`login_name`)
+)engine=innodb default charset=utf8mb4 comment='user';
+
+#内容表
 drop table if exists `content`;
 create table `content`
 (
