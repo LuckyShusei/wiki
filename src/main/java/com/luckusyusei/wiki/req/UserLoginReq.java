@@ -1,14 +1,14 @@
 package com.luckusyusei.wiki.req;
 
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 
 public class UserLoginReq {
 
-    @NotNull(message = "【Login Name】cannot be empty.")
+    @NotEmpty(message = "【Login Name】cannot be empty.")
     private String loginName;
 
-    @NotNull(message = "【password】cannot be empty.")
+    @NotEmpty(message = "【password】cannot be empty.")
     @Pattern(regexp = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,32}$", message = "【password】is incorrect.")
     private String password;
 
