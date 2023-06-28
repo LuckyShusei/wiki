@@ -9,6 +9,7 @@ import com.luckusyusei.wiki.exception.BusinessException;
 import com.luckusyusei.wiki.exception.BusinessExceptionCode;
 import com.luckusyusei.wiki.mapper.UserMapper;
 import com.luckusyusei.wiki.req.UserQueryReq;
+import com.luckusyusei.wiki.req.UserResetPasswordReq;
 import com.luckusyusei.wiki.req.UserSaveReq;
 import com.luckusyusei.wiki.util.CopyUtil;
 import com.luckusyusei.wiki.util.SnowFlake;
@@ -94,6 +95,13 @@ public class UserService {
         } else {
             return userList.get(0);
         }
+    }
+    /**
+     * 修改密码
+     */
+    public void resetPassword(UserResetPasswordReq req) {
+        User user = CopyUtil.copy(req, User.class);
+        userMapper.updateByPrimaryKeySelective(user);
     }
 
 }

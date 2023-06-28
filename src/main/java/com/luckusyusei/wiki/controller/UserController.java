@@ -1,9 +1,10 @@
 package com.luckusyusei.wiki.controller;
 
 import com.luckusyusei.wiki.Response.CommonResp;
-import com.luckusyusei.wiki.Response.UserQueryResp;
 import com.luckusyusei.wiki.Response.PageResp;
+import com.luckusyusei.wiki.Response.UserQueryResp;
 import com.luckusyusei.wiki.req.UserQueryReq;
+import com.luckusyusei.wiki.req.UserResetPasswordReq;
 import com.luckusyusei.wiki.req.UserSaveReq;
 import com.luckusyusei.wiki.service.UserService;
 import org.springframework.util.DigestUtils;
@@ -38,7 +39,13 @@ public class UserController {
         userService.delete(id);
         return resp;
     }
+    @PostMapping("/reset-password")
+    public CommonResp resetPassword(@Valid @RequestBody UserResetPasswordReq req) {
+        req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
+        CommonResp resp = new CommonResp<>();
+        userService.resetPassword(req);
+        return resp;
 
-
+    }
 
 }
