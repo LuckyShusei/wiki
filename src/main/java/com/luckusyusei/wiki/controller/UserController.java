@@ -2,7 +2,9 @@ package com.luckusyusei.wiki.controller;
 
 import com.luckusyusei.wiki.Response.CommonResp;
 import com.luckusyusei.wiki.Response.PageResp;
+import com.luckusyusei.wiki.Response.UserLoginResp;
 import com.luckusyusei.wiki.Response.UserQueryResp;
+import com.luckusyusei.wiki.req.UserLoginReq;
 import com.luckusyusei.wiki.req.UserQueryReq;
 import com.luckusyusei.wiki.req.UserResetPasswordReq;
 import com.luckusyusei.wiki.req.UserSaveReq;
@@ -46,6 +48,15 @@ public class UserController {
         userService.resetPassword(req);
         return resp;
 
+    }
+    @PostMapping("/login")
+    public CommonResp login(@Valid @RequestBody UserLoginReq req) {
+        req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
+        CommonResp<UserLoginResp> resp = new CommonResp<>();
+        UserLoginResp userLoginResp = userService.login(req);
+
+        resp.setContent(userLoginResp);
+        return resp;
     }
 
 }
