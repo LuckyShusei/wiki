@@ -32,15 +32,15 @@
         <template v-slot:action="{ text, record }">
           <a-space size="small">
             <a-button type="primary" @click="resetPassword(record)">
-              重置密码
+              Reset your password
             </a-button>
             <a-button type="primary" @click="edit(record)">
-              编辑
+              Edit
             </a-button>
             <a-popconfirm
-              title="删除后不可恢复，确认删除?"
-              ok-text="是"
-              cancel-text="否"
+                title="Delete this ebook? You might not be able to recover it."
+                ok-text="OK"
+                cancel-text="Cancel"
               @confirm="handleDelete(record.id)"
             >
               <a-button type="danger">
@@ -213,46 +213,46 @@
         });
       };
 
-      // -------- 重置密码 ---------
-      const resetModalVisible = ref(false);
-      const resetModalLoading = ref(false);
-      const handleResetModalOk = () => {
-        resetModalLoading.value = true;
+      // // -------- 重置密码 ---------
+      // const resetModalVisible = ref(false);
+      // const resetModalLoading = ref(false);
+      // const handleResetModalOk = () => {
+      //   resetModalLoading.value = true;
+      //
+      //   user.value.password = hexMd5(user.value.password + KEY);
+      //
+      //   axios.post("/user/reset-password", user.value).then((response) => {
+      //     resetModalLoading.value = false;
+      //     const data = response.data; // data = commonResp
+      //     if (data.success) {
+      //       resetModalVisible.value = false;
+      //
+      //       // 重新加载列表
+      //       handleQuery({
+      //         page: pagination.value.current,
+      //         size: pagination.value.pageSize,
+      //       });
+      //     } else {
+      //       message.error(data.message);
+      //     }
+      //   });
+      // };
 
-        user.value.password = hexMd5(user.value.password + KEY);
-
-        axios.post("/user/reset-password", user.value).then((response) => {
-          resetModalLoading.value = false;
-          const data = response.data; // data = commonResp
-          if (data.success) {
-            resetModalVisible.value = false;
-
-            // 重新加载列表
-            handleQuery({
-              page: pagination.value.current,
-              size: pagination.value.pageSize,
-            });
-          } else {
-            message.error(data.message);
-          }
-        });
-      };
-
-      /**
-       * 重置密码
-       */
-      const resetPassword = (record: any) => {
-        resetModalVisible.value = true;
-        user.value = Tool.copy(record);
-        user.value.password = null;
-      };
-
-      onMounted(() => {
-        handleQuery({
-          page: 1,
-          size: pagination.value.pageSize,
-        });
-      });
+      // /**
+      //  * 重置密码
+      //  */
+      // const resetPassword = (record: any) => {
+      //   resetModalVisible.value = true;
+      //   user.value = Tool.copy(record);
+      //   user.value.password = null;
+      // };
+      //
+      // onMounted(() => {
+      //   handleQuery({
+      //     page: 1,
+      //     size: pagination.value.pageSize,
+      //   });
+      // });
 
       return {
         param,
@@ -273,10 +273,10 @@
 
         handleDelete,
 
-        resetModalVisible,
-        resetModalLoading,
-        handleResetModalOk,
-        resetPassword
+      //   resetModalVisible,
+      //   resetModalLoading,
+      //   handleResetModalOk,
+      //   resetPassword
       }
     }
   });

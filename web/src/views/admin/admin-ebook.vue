@@ -11,12 +11,12 @@
           </a-form-item>
           <a-form-item>
             <a-button type="primary" @click="handleQuery({page: 1, size: pagination.pageSize})">
-              SEARCH
+              Search
             </a-button>
           </a-form-item>
           <a-form-item>
             <a-button type="primary" @click="add()">
-              NEW
+              New
             </a-button>
           </a-form-item>
         </a-form>
@@ -39,11 +39,11 @@
           <a-space size="small">
             <router-link :to="'/admin/admin-doc?ebookId=' +record.id">
               <a-button type="primary" @click="edit(record)">
-                DOCUMENTS
+                Documents
               </a-button>
             </router-link>
             <a-button type="primary" @click="edit(record)">
-              EDIT
+              Edit
             </a-button>
             <a-popconfirm
                 title="Delete this ebook? You might not be able to recover it."
@@ -52,7 +52,7 @@
                 @confirm="handleDelete(record.id)"
             >
               <a-button type="danger">
-                DELETE
+                Delete
               </a-button>
             </a-popconfirm>
 
