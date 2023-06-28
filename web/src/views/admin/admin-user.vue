@@ -54,7 +54,7 @@
   </a-layout>
 
   <a-modal
-    title="用户表单"
+    title="User"
     v-model:visible="modalVisible"
     :confirm-loading="modalLoading"
     @ok="handleModalOk"
