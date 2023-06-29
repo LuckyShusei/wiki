@@ -21,10 +21,21 @@
       <a-menu-item key="/about">
         <router-link to="/about">about us</router-link>
       </a-menu-item>
-<!--      <a class="login-menu" v-show="user.id">-->
-<!--        <span>Hello：{{user.name}}</span>-->
-<!--      </a>-->
-      <a class="login-menu"  @click="showLoginModal">
+      <a-popconfirm
+          title="Are you sure logout?"
+          ok-text="Yes"
+          cancel-text="No"
+          @confirm="logout()"
+      >
+        <a class="login-menu" v-show="user.id">
+          <span>Logout</span>
+        </a>
+      </a-popconfirm>
+
+      <a class="login-menu" v-show="user.id">
+        <span>Hello：{{user.name}}</span>
+      </a>
+      <a class="login-menu" v-show="!user.id" @click="showLoginModal">
         <span>Login</span>
       </a>
     </a-menu>
@@ -52,7 +63,7 @@
 import { defineComponent ,ref} from 'vue';
 import axios from 'axios';
 import { message } from 'ant-design-vue';
-// import store from "@/store";
+import store from "@/store";
 //
 // declare let hexMd5: any;
 // declare let KEY: any;
@@ -60,10 +71,14 @@ import { message } from 'ant-design-vue';
 export default defineComponent({
   name: 'the-header',
   setup () {
-     // 用来登录
+    // 登录后保存
+    // const user = computed(() => store.state.user);
+    const user =ref();
+    user.value ={};
+    // 用来登录
     const loginUser = ref({
       loginName: "test",
-      password: "test"
+      password: "test123"
     });
     const loginModalVisible = ref(false);
     const loginModalLoading = ref(false);
@@ -82,12 +97,26 @@ export default defineComponent({
           if (data.success) {
             loginModalVisible.value = false;
             message.success("Login successful！");
-
-            // store.commit("setUser", data.content);
+            user.value = data.content;
+            store.commit("setUser", data.content);
           } else {
             message.error(data.message);
           }
         });
+    };
+
+    // 退出登录
+    const logout = () => {
+      console.log("退出登录开始");
+      axios.get('/user/logout/' + user.value.token).then((response) => {
+        const data = response.data;
+        if (data.success) {
+          message.success("退出登录成功！");
+           store.commit("setUser", {});
+        } else {
+          message.error(data.message);
+        }
+      });
     };
 
     return {
@@ -96,6 +125,10 @@ export default defineComponent({
       showLoginModal,
       loginUser,
       login,
+      user,
+      logout
+
+
 
 
     }
@@ -107,7 +140,8 @@ export default defineComponent({
 <style>
 .login-menu {
   float: right;
-  color: white;
+  color: whitesmoke;
+  padding-left: 15px;
 }
 </style>
 
