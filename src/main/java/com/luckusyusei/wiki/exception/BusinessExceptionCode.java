@@ -4,7 +4,6 @@ public enum BusinessExceptionCode {
 
     USER_LOGIN_NAME_EXIST("The login name already exists."),
     LOGIN_USER_ERROR("The username does not exist or the password is incorrect."),
-    VOTE_REPEAT("您已点赞过"),
     ;
 
     private String desc;

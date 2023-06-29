@@ -1,6 +1,6 @@
 <template>
   <a-layout-footer style="text-align: center">
-    My Library  Hello: {{user.name}}
+    My Library <span v-show="user.id">,Hello: {{user.name}}</span>
   </a-layout-footer>
 </template>
 
