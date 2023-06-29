@@ -1,10 +1,10 @@
 package com.luckusyusei.wiki.req;
 
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
 
 public class EbookSaveReq {
     private Long id;
-    @NotNull(message="【Name】cannot be empty.")
+    @NotEmpty(message="【Name】cannot be empty.")
     private String name;
 
     private Long category1Id;

@@ -1,15 +1,17 @@
 package com.luckusyusei.wiki.req;
 
+import javax.validation.constraints.NotNull;
+
 public class DocSaveReq {
-//    @NotNull(message="【Name】cannot be empty.")
+    @NotNull(message="【Name】cannot be empty.")
     private Long id;
-//    @NotNull(message="【ID】cannot be empty.")
+    @NotNull(message="【ID】cannot be empty.")
     private Long ebookId;
-//    @NotNull(message="【Parent ID】cannot be empty.")
+    @NotNull(message="【Parent ID】cannot be empty.")
     private Long parent;
-//    @NotNull(message="【Name】cannot be empty.")
+    @NotNull(message="【Name】cannot be empty.")
     private String name;
-//    @NotNull(message="【Sort】cannot be empty.")
+    @NotNull(message="【Sort】cannot be empty.")
     private Integer sort;
 
     private Integer viewCount;

@@ -21,6 +21,9 @@
       <a-menu-item key="/about">
         <router-link to="/about">about us</router-link>
       </a-menu-item>
+<!--      <a class="login-menu" v-show="user.id">-->
+<!--        <span>Hello：{{user.name}}</span>-->
+<!--      </a>-->
       <a class="login-menu"  @click="showLoginModal">
         <span>Login</span>
       </a>
@@ -49,10 +52,10 @@
 import { defineComponent ,ref} from 'vue';
 import axios from 'axios';
 import { message } from 'ant-design-vue';
-import store from "@/store";
-
-declare let hexMd5: any;
-declare let KEY: any;
+// import store from "@/store";
+//
+// declare let hexMd5: any;
+// declare let KEY: any;
 
 export default defineComponent({
   name: 'the-header',
@@ -72,7 +75,7 @@ export default defineComponent({
     const login = () => {
       console.log("Start Login");
         loginModalLoading.value = true;
-        loginUser.value.password = hexMd5(loginUser.value.password + KEY);
+        // loginUser.value.password = hexMd5(loginUser.value.password + KEY);
         axios.post('/user/login', loginUser.value).then((response) => {
           loginModalLoading.value = false;
           const data = response.data;
@@ -80,7 +83,7 @@ export default defineComponent({
             loginModalVisible.value = false;
             message.success("Login successful！");
 
-            store.commit("setUser", data.content);
+            // store.commit("setUser", data.content);
           } else {
             message.error(data.message);
           }
@@ -92,7 +95,8 @@ export default defineComponent({
       loginModalLoading,
       showLoginModal,
       loginUser,
-      login
+      login,
+
 
     }
   }

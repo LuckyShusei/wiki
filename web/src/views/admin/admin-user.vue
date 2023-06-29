@@ -6,7 +6,7 @@
       <p>
         <a-form layout="inline" :model="param">
           <a-form-item>
-            <a-input v-model:value="param.loginName" placeholder="Login_name">
+            <a-input v-model:value="param.loginName" placeholder="Login Name">
             </a-input>
           </a-form-item>
           <a-form-item>
@@ -32,7 +32,7 @@
         <template v-slot:action="{ text, record }">
           <a-space size="small">
             <a-button type="primary" @click="resetPassword(record)">
-              Reset your password
+              Reset Password
             </a-button>
             <a-button type="primary" @click="edit(record)">
               Edit
@@ -54,13 +54,13 @@
   </a-layout>
 
   <a-modal
-    title="User"
-    v-model:visible="modalVisible"
-    :confirm-loading="modalLoading"
-    @ok="handleModalOk"
+      title="User Table"
+      v-model:visible="modalVisible"
+      :confirm-loading="modalLoading"
+      @ok="handleModalOk"
   >
     <a-form :model="user" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
-      <a-form-item label="login_name">
+      <a-form-item label="Login Name">
         <a-input v-model:value="user.loginName" :disabled="!!user.id"/>
       </a-form-item>
       <a-form-item label="nickname">
@@ -72,7 +72,18 @@
     </a-form>
   </a-modal>
 
-
+  <a-modal
+      title="Reset Password"
+      v-model:visible="resetModalVisible"
+      :confirm-loading="resetModalLoading"
+      @ok="handleResetModalOk"
+  >
+    <a-form :model="user" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
+      <a-form-item label="new password">
+        <a-input v-model:value="user.password"/>
+      </a-form-item>
+    </a-form>
+  </a-modal>
 </template>
 
 <script lang="ts">
@@ -81,8 +92,8 @@
   import { message } from 'ant-design-vue';
   import {Tool} from "@/Util/tool";
 
-  declare let hexMd5: any;
-  declare let KEY: any;
+  // declare let hexMd5: any;
+  // declare let KEY: any;
 
   export default defineComponent({
     name: 'AdminUser',
@@ -163,7 +174,7 @@
       const handleModalOk = () => {
         modalLoading.value = true;
 
-        user.value.password = hexMd5(user.value.password + KEY);
+        // user.value.password = hexMd5(user.value.password + KEY);
 
         axios.post("/user/save", user.value).then((response) => {
           modalLoading.value = false;
@@ -219,7 +230,7 @@
       const handleResetModalOk = () => {
         resetModalLoading.value = true;
 
-        user.value.password = hexMd5(user.value.password + KEY);
+        // user.value.password = hexMd5(user.value.password + KEY);
 
         axios.post("/user/reset-password", user.value).then((response) => {
           resetModalLoading.value = false;

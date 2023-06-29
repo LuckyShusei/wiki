@@ -1,15 +1,15 @@
 package com.luckusyusei.wiki.req;
 
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 
 public class UserSaveReq {
     private Long id;
-    @NotNull(message = "【Login Name】cannot be empty.")
+    @NotEmpty(message = "【Login Name】cannot be empty.")
     private String loginName;
-    @NotNull(message = "【Nickname】cannot be empty.")
+    @NotEmpty(message = "【Nickname】cannot be empty.")
     private String name;
-    @NotNull(message = "【password】cannot be empty.")
+    @NotEmpty(message = "【password】cannot be empty.")
     @Pattern(regexp = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,32}$", message = "【password】 should contain at least one digit and one letter, with a length between 6 and 32 characters.")
     private String password;
 
