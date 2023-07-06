@@ -1,6 +1,7 @@
 <template>
   <a-layout>
-    <a-layout-sider width="200" style="background: #fff">
+    <a-layout-sider width="200" style="background: #fff" >
+
       <a-menu
           mode="inline"
           :style="{ height: '100%', borderRight: 0 }"
@@ -25,7 +26,7 @@
         :style="{ background: '#fff', padding:'0 0 0 200px', margin: 0, minHeight: '280px' ,marginTop: '-150px' }"
     >
       <div class="welcome" v-show="isShowWelcome">
-        <h1>Welcome to use WiKi</h1>
+        <h1>My Library</h1>
       </div>
       <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks">
         <template #renderItem="{ item }">
@@ -166,6 +167,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
 .ant-avatar {
   width: 50px;
   height: 50px;
