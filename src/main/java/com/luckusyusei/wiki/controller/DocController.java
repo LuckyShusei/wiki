@@ -19,10 +19,10 @@ public class DocController {
     @Resource
     private DocService docService;
 
-    @GetMapping("/all")//新增一个接口
-    public CommonResp all(){
+    @GetMapping("/all/{ebookId}")//新增一个接口
+    public CommonResp all(@PathVariable Long ebookId){
         CommonResp<List<DocQueryResp>> resp = new CommonResp<>();
-        List<DocQueryResp> list =docService.all();
+        List<DocQueryResp> list =docService.all(ebookId);
         resp.setContent(list);
         return resp;
     }

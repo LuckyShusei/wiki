@@ -61,8 +61,9 @@ public class DocService {
         pageResp.setList(list);
         return pageResp;
     }
-    public List<DocQueryResp> all() {
+    public List<DocQueryResp> all(Long ebookId) {
         DocExample docexample = new DocExample();
+        docexample.createCriteria().andEbookIdEqualTo(ebookId);
         docexample.setOrderByClause("sort asc");
         List<Doc> doclist = docMapper.selectByExample(docexample);
         //列表复制
