@@ -47,6 +47,7 @@
             </template>
             <a-list-item-meta :description="item.description">
               <template #title>
+<!--                跳到文档页面-->
                 <router-link :to="'/doc?ebookId=' + item.id">
                   {{ item.name }}
                 </router-link>

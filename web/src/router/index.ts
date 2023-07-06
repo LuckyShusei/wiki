@@ -3,6 +3,7 @@ import Home from '../views/home.vue'
 import About from '../views/about.vue'
 import AdminUser from '../views/admin/admin-user.vue'
 import AdminEbook from '../views/admin/admin-ebook.vue'
+import Doc from '../views/admin/doc.vue'
 import AdminCategory from '../views/admin/admin-category.vue'
 import AdminDoc from '../views/admin/admin-doc.vue'
 import _default from "ant-design-vue/lib/_util/store/Provider";
@@ -14,6 +15,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/doc',
+    name: 'Doc',
+    component: Doc
   },
   {
     path: '/about',
