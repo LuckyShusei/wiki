@@ -349,6 +349,10 @@ export default defineComponent({
       // 清空富文本框
       valueHtml.value = "";
       modalVisible.value = true;
+      doc.value = {
+        ebookId: route.query.ebookId
+      }
+
       treeSelectData.value = Tool.copy(level1.value);
       // 为选择树添加一个"无"
       treeSelectData.value.unshift({id: 0, name: 'None'});

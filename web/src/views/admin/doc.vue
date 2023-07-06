@@ -1,6 +1,7 @@
 <template>
   <a-layout>
     <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
+      <h3 v-if="level1.length === 0">Sorry,no content</h3>
       <a-row>
         <a-col :span="6">
           <a-tree
@@ -9,6 +10,7 @@
               @select="onSelect"
               :replaceFields="{title: 'name', key: 'id', value: 'id'}"
               :defaultExpandAll="true"
+              :defaultSelectedKeys="defaultSelectedKeys"
           >
           </a-tree>
         </a-col>
@@ -26,6 +28,8 @@ import axios from 'axios';
 import {message} from 'ant-design-vue';
 import {Tool} from "@/Util/tool";
 import {useRoute} from "vue-router";
+import defaultResult from "ant-design-vue/lib/vc-menu/utils/isMobile";
+import any = defaultResult.any;
 
 export default defineComponent({
   name: 'Doc',
@@ -33,6 +37,11 @@ export default defineComponent({
     const route = useRoute();
     const docs = ref();
     const html = ref();
+    const defaultSelectedKeys = ref();
+    defaultSelectedKeys.value = [];
+    // // 当前选中的文档
+    // const doc = ref();
+    // doc.value = {};
 
     /**
      * 一级文档树，children属性就是二级文档
@@ -84,8 +93,8 @@ export default defineComponent({
           // if (Tool.isNotEmpty(level1)) {
           //   defaultSelectedKeys.value = [level1.value[0].id];
           //   handleQueryContent(level1.value[0].id);
-          //   // 初始显示文档信息
-          //   doc.value = level1.value[0];
+          // //   // 初始显示文档信息
+          // //   doc.value = level1.value[0];
           // }
         } else {
           message.error(data.message);
