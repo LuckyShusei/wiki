@@ -13,6 +13,7 @@
           </a-tree>
         </a-col>
         <a-col :span="18">
+          <div :innerHTML="html"></div>
         </a-col>
       </a-row>
     </a-layout-content>
@@ -31,6 +32,7 @@ export default defineComponent({
   setup() {
     const route = useRoute();
     const docs = ref();
+    const html = ref();
 
     /**
      * 一级文档树，children属性就是二级文档
@@ -45,7 +47,28 @@ export default defineComponent({
      */
     const level1 = ref(); // 一级文档树，children属性就是二级文档
     level1.value = [];
-
+    /**
+     * 内容查询
+     **/
+    const handleQueryContent = (id: number) => {
+      axios.get("/doc/find-content/" + id).then((response) => {
+        const data = response.data;
+        if (data.success) {
+          html.value = data.content;
+        } else {
+          message.error(data.message);
+        }
+      });
+    };
+    const onSelect = (selectedKeys: any, info: any) => {
+      console.log('selected', selectedKeys, info);
+      if (Tool.isNotEmpty(selectedKeys)) {
+        // // 选中某一节点时，加载该节点的文档信息
+        // doc.value = info.selectedNodes[0].props;
+        // 加载内容
+        handleQueryContent(selectedKeys[0]);
+      }
+    };
     /**
      * 数据查询
      **/
@@ -76,6 +99,8 @@ export default defineComponent({
 
     return {
       level1,
+      html,
+      onSelect
     }
   }
 });
