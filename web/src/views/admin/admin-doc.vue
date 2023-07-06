@@ -56,7 +56,7 @@
             <a-form layout="inline" :model="param">
               <a-form-item>
                 <a-button type="primary" @click="handleSave()">
-                  SAVE
+                  Save
                 </a-button>
               </a-form-item>
             </a-form>
@@ -81,6 +81,11 @@
               <a-input v-model:value="doc.sort" placeholder="Sort"/>
             </a-form-item>
             <a-form-item >
+              <a-button type="primary" @click="handlePreviewContent()">
+                <EyeOutlined /> Content Preview
+              </a-button>
+            </a-form-item>
+            <a-form-item>
 
 <!--              <button @click="insertText">insert text</button>-->
 
@@ -106,7 +111,9 @@
         </a-col>
       </a-row>
 
-
+      <a-drawer width="900" placement="right" :closable="false" :visible="drawerVisible" @close="onDrawerClose">
+        <div class="wangeditor" :innerHTML="previewHtml"></div>
+      </a-drawer>
 
     </a-layout-content>
   </a-layout>
@@ -388,6 +395,18 @@ export default defineComponent({
       editorRef.value = editor // 记录 editor 实例，重要！
     }
 
+    // ----------------富文本预览--------------
+    const drawerVisible = ref(false);
+    const previewHtml = ref();
+    const handlePreviewContent = () => {
+      const html = valueHtml.value;
+      previewHtml.value = html;
+      drawerVisible.value = true;
+    };
+    const onDrawerClose = () => {
+      drawerVisible.value = false;
+    };
+
     return {
       param,
       // docs,
@@ -413,7 +432,12 @@ export default defineComponent({
       mode: 'default', // 或 'simple'
       toolbarConfig,
       editorConfig,
-      handleCreated
+      handleCreated,
+
+      drawerVisible,
+      previewHtml,
+      handlePreviewContent,
+      onDrawerClose
     }
   }
 });
