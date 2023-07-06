@@ -237,6 +237,7 @@ export default defineComponent({
         if(data.success){
           //modalVisible.value = false;
           //modalLoading.value = false;
+          message.success("Save Success");
           //重新加载列表
           handleQuery();
         }else{
@@ -323,6 +324,8 @@ export default defineComponent({
     };
           // 编辑
     const edit = (record:any) => {
+      // 清空富文本框
+        valueHtml.value = "";
       modalVisible.value = true;
       doc.value =Tool.copy(record);//record赋值到响应式变量doc
       handleQueryContent();
@@ -336,6 +339,8 @@ export default defineComponent({
     };
     // 新增
     const add = () => {
+      // 清空富文本框
+      valueHtml.value = "";
       modalVisible.value = true;
       treeSelectData.value = Tool.copy(level1.value);
       // 为选择树添加一个"无"
