@@ -3,9 +3,9 @@ package com.luckusyusei.wiki.req;
 import javax.validation.constraints.NotNull;
 
 public class DocSaveReq {
-    @NotNull(message="【Name】cannot be empty.")
+
     private Long id;
-    @NotNull(message="【ID】cannot be empty.")
+    @NotNull(message="【ebookId】cannot be empty.")
     private Long ebookId;
     @NotNull(message="【Parent ID】cannot be empty.")
     private Long parent;

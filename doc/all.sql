@@ -53,18 +53,18 @@ create table `category`
     primary key (`id`)
 )engine=innodb default  charset = utf8mb4 comment ='category';
 
-insert into `category`(id,parent,name,sort)values(100,000,'前端开发',100);
+insert into `category`(id,parent,name,sort)values(100,000,'Front-end',100);
 insert into `category`(id,parent,name,sort)values(101,100,'Vue',101);
 insert into `category`(id,parent,name,sort)values(102,100,'HTML&CSS',102);
 insert into `category`(id,parent,name,sort)values(200,000,'JAVA',200);
-insert into `category`(id,parent,name,sort)values(201,200,'基础应用',201);
-insert into `category`(id,parent,name,sort)values(202,200,'框架应用',202);
-insert into `category`(id,parent,name,sort)values(300,000,'PYTHON',300);
-insert into `category`(id,parent,name,sort)values(301,300,'基础方法应用',301);
-insert into `category`(id,parent,name,sort)values(302,300,'基础应用',302);
-insert into `category`(id,parent,name,sort)values(400,000,'数据库',400);
+insert into `category`(id,parent,name,sort)values(201,200,'Basic Application',201);
+insert into `category`(id,parent,name,sort)values(202,200,'Framework Application',202);
+insert into `category`(id,parent,name,sort)values(300,000,'Others',300);
+insert into `category`(id,parent,name,sort)values(301,300,'PYTHON',301);
+insert into `category`(id,parent,name,sort)values(302,300,'Spring Boot',302);
+insert into `category`(id,parent,name,sort)values(400,000,'DataBase',400);
 insert into `category`(id,parent,name,sort)values(401,400,'MySql',401);
-insert into `category`(id,parent,name,sort)values(500,000,'其他',500);
+insert into `category`(id,parent,name,sort)values(500,000,'日本語',500);
 
 
 

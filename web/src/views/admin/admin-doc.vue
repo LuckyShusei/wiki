@@ -1,4 +1,4 @@
-<template>
+-<template>
   <a-layout>
     <a-layout-content
         :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
@@ -35,16 +35,16 @@
             <template v-slot:action="{ text, record }">
               <a-space size="small">
                 <a-button type="primary" @click="edit(record)" size="small">
-                  EDIT
+                  Edit
                 </a-button>
                 <a-popconfirm
-                    title="删除后不可恢复，确认删除?"
+                    title="Delete this ebook? You might not be able to recover it."
                     ok-text="OK"
                     cancel-text="Cancel"
                     @confirm="handleDelete(record.id)"
                 >
                   <a-button type="danger" size="small">
-                    DELETE
+                    Delete
                   </a-button>
                 </a-popconfirm>
               </a-space>
@@ -81,8 +81,26 @@
               <a-input v-model:value="doc.sort" placeholder="Sort"/>
             </a-form-item>
             <a-form-item >
-                <a-input v-model:value="doc.content" type="Content" />
-              <div id="content"></div>
+
+<!--              <button @click="insertText">insert text</button>-->
+
+              <div style="border: 1px solid #ccc">
+                <Toolbar
+                    style="border-bottom: 1px solid #ccc"
+                    :editor="editorRef"
+                    :defaultConfig="toolbarConfig"
+                    :mode="mode"
+                />
+                <Editor
+                    style="height: 500px; overflow-y: hidden;"
+                    v-model="valueHtml"
+                    :defaultConfig="editorConfig"
+                    :mode="mode"
+                    @onCreated="handleCreated"
+                />
+              </div>
+
+              <div id="content"><a-input v-model:value="doc.content" type="Content" /></div>
             </a-form-item>
           </a-form>
         </a-col>
@@ -97,18 +115,20 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue';
+import {defineComponent, onBeforeUnmount, onMounted, ref, shallowRef} from 'vue';
 import axios from 'axios';
 import {message} from "ant-design-vue";
 import {Tool} from "@/Util/tool";
 
 import {useRoute} from "vue-router";
 import '@wangeditor/editor/dist/css/style.css'
-import { createEditor, createToolbar } from '@wangeditor/editor'
+import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
+import {createEditor} from "@wangeditor/editor";
 
 
 
 export default defineComponent({
+  components: { Editor, Toolbar },
   name: 'AdminDoc',
   setup() {
     const route = useRoute();
@@ -179,6 +199,10 @@ export default defineComponent({
           level1.value = [];
           level1.value = Tool.array2Tree(docs.value, 0);
           console.log("树形结构：", level1);
+          // 父文档下拉框初始化，相当于点击新增
+          treeSelectData.value = Tool.copy(level1.value) || [];
+          // 为选择树添加一个"无"
+          treeSelectData.value.unshift({id: 0, name: '无'});
         }else{
           message.error(data.message);
         }
@@ -192,29 +216,17 @@ export default defineComponent({
      * 数组，[100, 101]对应：前端开发 / Vue
      */
 
-    const doc = ref({});//定义响应式变量doc
+    const doc = ref();//定义响应式变量doc
+    doc.value = {
+       ebookId: route.query.ebookId,
+    };
     const modalVisible = ref(false);
     const modalLoading = ref(false);
 
 
 
 
-    const handleModalOk = () => {
-      modalLoading.value = true;
-      axios.post("/doc/save",doc.value).then((response) => {
-        modalLoading.value = false;
-        const data = response.data;
-        if(data.success){
-          modalVisible.value = false;
-          modalLoading.value = false;
-            //重新加载列表
-          handleQuery();
-        }else{
-          message.error(data.massage);
-        }
 
-    });
-    };
     /**
      * 将某节点及其子孙节点全部置为disabled
      */
@@ -292,9 +304,6 @@ export default defineComponent({
     // 新增
     const add = () => {
       modalVisible.value = true;
-      doc.value = {
-        ebookId: route.query.ebookId
-      };
       treeSelectData.value = Tool.copy(level1.value);
       // 为选择树添加一个"无"
       treeSelectData.value.unshift({id: 0, name: 'None'});
@@ -313,21 +322,53 @@ export default defineComponent({
       });
     };
 
+    const handleSave = () => {
+      modalLoading.value = true;
+      doc.value.content = valueHtml.value;
+      // doc.value.content = editor.getText();
+      // const editor = createEditor(doc.value.content);
+      // const html = editor.getHtml();
+      // doc.value.content = editor.getHtml();
+      axios.post("/doc/save",doc.value).then((response) => {
+        modalLoading.value = false;
+        const data = response.data;
+        if(data.success){
+          //modalVisible.value = false;
+          //modalLoading.value = false;
+          //重新加载列表
+          handleQuery();
+        }else{
+          message.error(data.massage);
+        }
+
+      });
+    };
+    // 编辑器实例，必须用 shallowRef
+    const editorRef = shallowRef()
+
+    // 内容 HTML
+    const valueHtml = ref('<p>hello</p>')
+    const editor = editorRef.value
+
+
     onMounted(() => {
       handleQuery();
       // 创建编辑器
-
-      const editor = createEditor({
-        selector: '#content'
-      })
-      // editor.config.zIndex =0;
-      // 创建工具栏
-      const toolbar = createToolbar({
-        editor,
-        selector: '#content'
-      })
-
     });
+
+    const toolbarConfig = {}
+    const editorConfig = { placeholder: '请输入内容...' }
+
+    // 组件销毁时，也及时销毁编辑器
+    onBeforeUnmount(() => {
+      const editor = editorRef.value
+      if (editor == null) return
+      editor.destroy()
+    })
+
+    const handleCreated = (editor: any) => {
+      editorRef.value = editor // 记录 editor 实例，重要！
+    }
 
     return {
       param,
@@ -344,10 +385,17 @@ export default defineComponent({
       doc,
       modalVisible,
       modalLoading,
-      handleModalOk,
+      handleSave,
 
       handleDelete,
-      treeSelectData
+      treeSelectData,
+
+      editorRef,
+      valueHtml,
+      mode: 'default', // 或 'simple'
+      toolbarConfig,
+      editorConfig,
+      handleCreated
     }
   }
 });
@@ -358,4 +406,8 @@ img {
   width: 50px;
   height: 50px;
 }
+#editor-container {}
+#toolbar-container {}
+
+
 </style>

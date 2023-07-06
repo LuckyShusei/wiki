@@ -9,13 +9,13 @@
       <a-menu-item key="/">
       <router-link to="/">Home</router-link>
       </a-menu-item>
-      <a-menu-item key="/admin/admin-user">:style="user.id? {} : {display:'none'}">
+      <a-menu-item key="/admin/admin-user" :style="user.id? {} : {display:'none'}">
         <router-link to="/admin/admin-user">User</router-link>
       </a-menu-item>
-      <a-menu-item key="/admin/admin-ebook">:style="user.id? {} : {display:'none'}">
+      <a-menu-item key="/admin/admin-ebook" :style="user.id? {} : {display:'none'}">
       <router-link to="/admin/admin-ebook">Ebook</router-link>
       </a-menu-item>
-      <a-menu-item key="/admin/admin-category">:style="user.id? {} : {display:'none'}">
+      <a-menu-item key="/admin/admin-category" :style="user.id? {} : {display:'none'}">
         <router-link to="/admin/admin-category">Category</router-link>
       </a-menu-item>
       <a-menu-item key="/about">
