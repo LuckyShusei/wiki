@@ -224,7 +224,27 @@ export default defineComponent({
     const modalLoading = ref(false);
 
 
+    const handleSave = () => {
+      modalLoading.value = true;
+      doc.value.content = valueHtml.value;
+      // doc.value.content = editor.getText();
+      // const editor = createEditor(doc.value.content);
+      // const html = editor.getHtml();
+      // doc.value.content = editor.getHtml();
+      axios.post("/doc/save",doc.value).then((response) => {
+        modalLoading.value = false;
+        const data = response.data;
+        if(data.success){
+          //modalVisible.value = false;
+          //modalLoading.value = false;
+          //重新加载列表
+          handleQuery();
+        }else{
+          message.error(data.massage);
+        }
 
+      });
+    };
 
 
     /**
@@ -288,11 +308,24 @@ export default defineComponent({
         }
       }
     };
+    /**
+     * 内容查询
+     **/
+    const handleQueryContent = () => {
+      axios.get("/doc/find-content/" + doc.value.id).then((response) => {
+        const data = response.data;
+        if (data.success) {
+          valueHtml.value = data.content;
+        } else {
+          message.error(data.message);
+        }
+      });
+    };
           // 编辑
     const edit = (record:any) => {
       modalVisible.value = true;
       doc.value =Tool.copy(record);//record赋值到响应式变量doc
-
+      handleQueryContent();
       // 不能选择当前节点及其所有子孙节点，作为父节点，会使树断开
       treeSelectData.value = Tool.copy(level1.value);
       setDisable(treeSelectData.value, record.id);
@@ -322,27 +355,7 @@ export default defineComponent({
       });
     };
 
-    const handleSave = () => {
-      modalLoading.value = true;
-      doc.value.content = valueHtml.value;
-      // doc.value.content = editor.getText();
-      // const editor = createEditor(doc.value.content);
-      // const html = editor.getHtml();
-      // doc.value.content = editor.getHtml();
-      axios.post("/doc/save",doc.value).then((response) => {
-        modalLoading.value = false;
-        const data = response.data;
-        if(data.success){
-          //modalVisible.value = false;
-          //modalLoading.value = false;
-          //重新加载列表
-          handleQuery();
-        }else{
-          message.error(data.massage);
-        }
 
-      });
-    };
     // 编辑器实例，必须用 shallowRef
     const editorRef = shallowRef()
 
