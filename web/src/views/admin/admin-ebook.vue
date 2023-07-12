@@ -123,22 +123,22 @@ export default defineComponent({
         dataIndex: 'name'
       },
       {
-        title: 'Category1',
+        title: 'Category',
         slots: {customRender: 'category'}
       },
 
-      {
-        title: ' Documents',
-        dataIndex: 'docCount'
-      },
-      {
-        title: 'Views',
-        dataIndex: 'viewCount'
-      },
-      {
-        title: 'Likes',
-        dataIndex: 'voteCount'
-      },
+      // {
+      //   title: ' Documents',
+      //   dataIndex: 'docCount'
+      // },
+      // {
+      //   title: 'Views',
+      //   dataIndex: 'viewCount'
+      // },
+      // {
+      //   title: 'Likes',
+      //   dataIndex: 'voteCount'
+      // },
       {
         title: 'Action',
         key: 'action',

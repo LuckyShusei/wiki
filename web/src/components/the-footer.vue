@@ -1,6 +1,6 @@
 <template>
   <a-layout-footer style="text-align: center">
-    My Library <span v-show="user.id">,Hello: {{user.name}}</span>
+    My Library @ created by Syusei <span v-show="user.id">,Hello: {{user.name}}</span>
   </a-layout-footer>
 </template>
 

@@ -19,7 +19,7 @@
         <router-link to="/admin/admin-category">Category</router-link>
       </a-menu-item>
       <a-menu-item key="/about">
-        <router-link to="/about">about us</router-link>
+        <router-link to="/about">About us</router-link>
       </a-menu-item>
       <a-popconfirm
           title="Are you sure logout?"
@@ -111,7 +111,7 @@ export default defineComponent({
       axios.get('/user/logout/' + user.value.token).then((response) => {
         const data = response.data;
         if (data.success) {
-          message.success("退出登录成功！");
+          message.success("logout successful");
            store.commit("setUser", {});
         } else {
           message.error(data.message);

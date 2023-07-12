@@ -11,12 +11,12 @@
 <!--          </a-form-item>-->
           <a-form-item>
             <a-button type="primary" @click="handleQuery()">
-              SEARCH
+              Search
             </a-button>
           </a-form-item>
           <a-form-item>
             <a-button type="primary" @click="add()">
-              NEW
+              New
             </a-button>
           </a-form-item>
         </a-form>
@@ -34,7 +34,7 @@
         <template v-slot:action="{ text, record }">
           <a-space size="small">
             <a-button type="primary" @click="edit(record)">
-            EDIT
+            Edit
             </a-button>
             <a-popconfirm
                 title="Delete this category? You might not be able to recover it."
@@ -43,7 +43,7 @@
                 @confirm="handleDelete(record.id)"
             >
               <a-button type="danger">
-                DELETE
+                Delete
               </a-button>
             </a-popconfirm>
 

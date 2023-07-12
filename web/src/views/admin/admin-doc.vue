@@ -9,12 +9,12 @@
             <a-form layout="inline" :model="param">
               <a-form-item>
                 <a-button type="primary" @click="handleQuery()">
-                  SEARCH
+                  Search
                 </a-button>
               </a-form-item>
               <a-form-item>
                 <a-button type="primary" @click="add()">
-                  NEW
+                  New
                 </a-button>
               </a-form-item>
             </a-form>
@@ -244,7 +244,7 @@ export default defineComponent({
         if(data.success){
           //modalVisible.value = false;
           //modalLoading.value = false;
-          message.success("Save Success");
+          message.success("save successful");
           //重新加载列表
           handleQuery();
         }else{
