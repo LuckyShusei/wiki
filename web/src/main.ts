@@ -13,6 +13,7 @@ import { message } from 'ant-design-vue';
 
 axios.defaults.baseURL = process.env.VUE_APP_SERVER;
 
+
 /**
  * axios拦截器
  */
